@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-	
-	error_reporting(0);
-	// Create the email and send the message
-	$to = 'fallonloic@hotmail.fr'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-	$subject = $_POST['name'];
-	$message = $_POST['message'];
-	$headers = $_POST['headers'] . "\r\n" . 
-	'Reply-To: fallonloic@hotmail.fr' . "\r\n" .
-	'X-Mailer: PHP/' . phpversion();
+<?php 
 
-	mail($to,$subject,$message,$headers);
-	         
-?>
+  error_reporting(0);
+  session_start();
+
+  $_SESSION['nom']=$_POST['name'];
+  $_SESSION['phone']=$_POST['headers'];
+  $_SESSION['message']=$_POST['nmessage'];
+
+ ?>
 
   <head>
 
@@ -63,7 +59,7 @@
           <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
           <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
           <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-          <form name="sentMessage" id="contactForm" action="?page=contacte" novalidate>
+          <form name="sentMessage" id="contactForm" action="mail.php" novalidate>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Nom</label>
