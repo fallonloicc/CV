@@ -12,6 +12,14 @@
                   </span>
                 </a>
               </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/fallonloicc">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
             </ul>
             <p class="copyright text-muted">Copyright &copy; Loïc Fallon 2018</p>
           </div>
