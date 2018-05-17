@@ -85,7 +85,7 @@
           </form>
           <?php 
             error_reporting(0);
-            if (isset($_POST['name'], $_POST['headers'],$_POST['sujet'],$_POST['message'])) {
+            if (isset($_POST['name'] && $_POST['headers'] && $_POST['sujet'] && $_POST['message'])) {
                 
                 $to = 'fallonloic@hotmail.fr';
                 $nom = $_POST['name'];
