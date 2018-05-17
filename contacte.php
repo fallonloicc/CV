@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php 
-
-  error_reporting(0);
-  session_start();
-
-  $_SESSION['nom']=$_POST['name'];
-  $_SESSION['phone']=$_POST['headers'];
-  $_SESSION['message']=$_POST['nmessage'];
-
- ?>
-
   <head>
 
     <meta charset="utf-8">
@@ -59,25 +48,32 @@
           <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
           <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
           <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-          <form name="sentMessage" id="contactForm" action="mail.php" novalidate>
+          <form name="sentMessage" id="contactForm" action="" method="POST" novalidate>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Nom</label>
-                <input type="text" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Please enter your name.">
+                <input type="text" class="form-control" placeholder="Nom" name="name" required data-validation-required-message="Entrez votre nom.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Numéro de téléphone</label>
-                <input type="tel" class="form-control" placeholder="Numéro de téléphone" id="headers" required data-validation-required-message="Please enter your phone number.">
+                <label>Mail</label>
+                <input type="tel" class="form-control" placeholder="Mail" name="headers" required data-validation-required-message="Entrez votre mail.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>Mail</label>
+                <input type="tel" class="form-control" placeholder="Sujet" name="sujet" required data-validation-required-message="Entrez le sujet du mail.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Message</label>
-                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                <textarea rows="5" class="form-control" placeholder="Message" name="message" required data-validation-required-message="Entrez le message."></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -87,6 +83,24 @@
               <button type="submit" class="btn btn-primary" id="sendMessageButton">Envoyez</button>
             </div>
           </form>
+          <?php 
+            error_reporting(0);
+            if (isset($_POST['name'], $_POST['headers'],$_POST['sujet'],$_POST['message'])) {
+                
+                $to = 'fallonloic@hotmail.fr';
+                $nom = $_POST['name'];
+                $mail = $_POST['headers'];
+                $sujet = $_POST['sujet'];
+                $message = $_POST['message'];
+
+                $entete = "Sujet : ".$sujet." de la part de ".$nom. " : ".$mail.".";
+                mail($to, $entete, $message);
+
+                echo "Mail envoyé !";
+            }          
+
+          ?>
+
         </div>
       </div>
     </div>
