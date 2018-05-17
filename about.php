@@ -42,33 +42,51 @@
 
     <!-- Main Content -->
     <div class="container">
+
       <div class="row">
+
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="progress">
+
             <div class="progress-bar bg-success progress-bar-striped active" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"> HTML / CSS / Javascript</div>
           </div>
           <br>
+
           <div class="progress">
             <div class="progress-bar bg-info progress-bar-striped active" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">PHP</div>
           </div>
+
           <br>
+
           <div class="progress">
             <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Java</div>
           </div>
+
           <br>
+
           <div class="progress">
             <div class="progress-bar bg-danger progress-bar-striped active" role="progressbar" style="width: 20%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Python / Django</div>
           </div>
+
           <br>
+
           <div class="progress">
             <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">MySQL</div>
           </div>
+
           <br>
+
           <p><b>Au cours de notre BTS nous avons du réalisé plusieurs projets afin de tester nos compétences actuelles. Voici les liens vers nos projets :</b></p> 
-          <button onclick="window.location='https://galaxy-swiss-bourdin.000webhostapp.com/'" style="width: 100%; height: 12%; background-color: silver; color: white; border-radius: 10px"> PPE 1: Site vitrine pour l'entreprise Galaxy Swiss Bourdin.</button>
+
+          <div style="text-align: center">
+            <button onclick="window.location='https://galaxy-swiss-bourdin.000webhostapp.com/'" style="background-color: silver; color: white; border-radius: 10px; padding: -5%; width: 50%;"><p style="font-size: 12px; vertical-align: center;"> PPE 1: Site vitrine pour l'entreprise Galaxy Swiss Bourdin.</p></button>
+          </div>
 
           <p><b>Vous pouvez également retrouvé ici quelque projet personnels ou conçu lors de stage :</b></p>
-          <button onclick="window.location='https://mega.nz/#!NYgCDKyT!YfXS9Vs49w75hG9i5_Kt6gw3B_cgv8CyfF8w_0AS2kU'"style="width: 100%; height: 12%; background-color: silver; color: white; border-radius: 10px">Application Mobile pour la Française de Mécanique. Digitalisation de la CheckList</button>
+
+          <div style="text-align: center;">
+            <button onclick="window.location='https://mega.nz/#!NYgCDKyT!YfXS9Vs49w75hG9i5_Kt6gw3B_cgv8CyfF8w_0AS2kU'"style="background-color: silver; color: white; border-radius: 10px; padding: -5%; width: 50%"><p style="font-size: 12px; vertical-align: center;">Application Mobile pour la Française de Mécanique. Digitalisation de la CheckList</p></button>
+          </div>
           
         </div>
       </div>
