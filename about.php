@@ -46,35 +46,55 @@
       <div class="row">
 
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="progress">
+          <div class="progress" style="height: 3%;font-size: 75%;">
 
-            <div class="progress-bar bg-success progress-bar-striped active" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"> HTML / CSS / Javascript</div>
+            <div class="progress-bar bg-success progress-bar-striped active" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"> HTML / CSS </div>
           </div>
           <br>
 
-          <div class="progress">
-            <div class="progress-bar bg-info progress-bar-striped active" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">PHP</div>
+          <div class="progress" style="height: 3%;font-size: 75%;">
+            <div class="progress-bar bg-danger progress-bar-striped active" role="progressbar" style="width: 20%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Javascript</div>
           </div>
 
           <br>
 
-          <div class="progress">
+          <div class="progress" style="height: 3%;font-size: 75%;">
+            <div class="progress-bar bg-info progress-bar-striped active" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">PHP</div>
+          </div>
+
+          <br>
+
+          <div class="progress" style="height: 3%;font-size: 75%;">
             <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Java</div>
           </div>
 
           <br>
 
-          <div class="progress">
-            <div class="progress-bar bg-danger progress-bar-striped active" role="progressbar" style="width: 20%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Python / Django</div>
+          <div class="progress" style="height: 3%;font-size: 75%;">
+            <div class="progress-bar bg-danger progress-bar-striped active" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Python / Django</div>
           </div>
 
           <br>
 
-          <div class="progress">
+          <div class="progress" style="height: 3%;font-size: 75%;">
             <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">MySQL</div>
           </div>
 
           <br>
+
+          <div class="progress" style="height: 3%;font-size: 75%;">
+
+            <div class="progress-bar bg-success progress-bar-striped active" role="progressbar" style="width: 20%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"> C</div>
+          </div>
+          <br>
+
+          <div class="progress" style="height: 3%;font-size: 75%;">
+            <div class="progress-bar bg-warning progress-bar-striped active" role="progressbar" style="width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">C ++</div>
+          </div>
+
+          <br>
+
+
 
           <p><b>Au cours de notre BTS nous avons du réalisé plusieurs projets afin de tester nos compétences actuelles. Voici les liens vers nos projets :</b></p> 
 
