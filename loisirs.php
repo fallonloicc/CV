@@ -60,11 +60,11 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <p>Je suis passionée de basketball, de skateboard et de jeux vidéos.</p>
-          <p>Je suis fan de Stephen Curry, un joueur de basket évoluant au Golden States Warrios, et de Richie Jackson, un skateur au look décalé. Mes jeux préférés sont Fortnite, TrackMania Stadium, Overwatch, NBA 2k18 sur PC et Mario Odysseï et Mario Kart sur Nintendo Switch.</p>
+          <p>Je suis fan de Stephen Curry, un joueur de basket évoluant au Golden States Warrios, et de Richie Jackson, un skateur au look décalé. Mes jeux préférés sont Assasin's Creed Odysseï, TrackMania Stadium, Overwatch, NBA 2k18 sur PC et Mario Aces sur Nintendo Switch.</p>
           <p>Malgré cela, je privilégie les sorties entre amis (kart, bowling ...).
           <p>Je suis également passionnée par la science-fiction et la fantaisie, je suis un grand fan d'Harry Potter, de Star Wars et du Seigneur des anneaux.<br> Je traine également sur les réseaux sociaux et reste connecté à l'actualité informatique / geek par le biais de site tel qu'Hitek, JournalDuGeek ou 01.net</p>
 
-          
+
         </div>
       </div>
     </div>

@@ -418,3 +418,8 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+
+.zoom:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
