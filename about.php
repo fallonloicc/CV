@@ -94,24 +94,55 @@
 
           <br>
 
-
-
-          <p><b>Au cours de notre BTS nous avons du réalisé plusieurs projets afin de tester nos compétences actuelles. Voici les liens vers nos projets :</b></p> 
-
-          <div style="text-align: center">
-            <button onclick="window.location='https://galaxy-swiss-bourdin.000webhostapp.com/'" style="background-color: silver; color: white; border-radius: 10px; padding: -5%; width: 50%;"><p style="font-size: 12px; vertical-align: center;"> PPE 1: Site vitrine pour l'entreprise Galaxy Swiss Bourdin.</p></button>
+          <div class="progress" style="height: 3%;font-size: 75%;">
+            <div class="progress-bar bg-danger progress-bar-striped active" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">C#</div>
           </div>
 
-          <p><b>Vous pouvez également retrouvé ici quelque projet personnels ou conçu lors de stage :</b></p>
+          <br>
 
-          <div style="text-align: center;">
-            <button onclick="window.location='https://mega.nz/#!NYgCDKyT!YfXS9Vs49w75hG9i5_Kt6gw3B_cgv8CyfF8w_0AS2kU'"style="background-color: silver; color: white; border-radius: 10px; padding: -5%; width: 50%"><p style="font-size: 12px; vertical-align: center;">Application Mobile pour la Française de Mécanique. Digitalisation de la CheckList</p></button>
-          </div>
-          
+          <p><b>Voici les projets réalisés à l'école :</b></p>
+          <ul>
+
+            <li>
+                PPE : Au cours des deux années de BTS, nous avons eu pour mission de créer des sites et applications pour une entreprise fictive commercialisant des bornes photos.
+                <br><br>Avec Loïck Thorel et Grégoire Somon, nous avons réalisé un site vitrine afin de présenter l'entreprise, un site e-commerce afin de proposer à la vente les produits de l'entreprise
+                , une application lourd permettant de gérer les départs et retour de nos produits ainsi que l'ajout de produit et enfin une application mobile pour facilité l'utilisation de nos produits.
+            </li>
+            <br>
+            <li>
+                Berceuse connecté : A la fin de la première année, nous avons pendant une semaine de workshop où nous avons dû réaliser une berceuse connecté.
+                <br><br>Grâce à un Raspberry Pi, nous avons créer une berceuse se déclenchant lorsque le nourrisson crie ainsi qu'une interface de contrôle pour que les parents puissent allumé et surveiller l'activité du nourrisson depuis un ordinateur ou un smartphone.
+            </li>
+
+          </ul>
+
+          <p><b>Voici les projets réalisés en stage :</b></p>
+          <ul>
+            <li>
+              Checklist tour de terrain : Lors de mon stage en première année à la Française de Mécanique, j'avais pour mission de facilité le tour de terrain des techniciens.
+              <br><br>Afin de répondre à ce besoin, j'ai créé une application mobile puis une interface web avec Python et le framework Django permettant aux techniciens de renseigner les informations, et au responsable de voir ces informations en temps réel.
+            </li>
+            <br>
+            <li>
+              Installation server : En novembre, j'ai effectué un stage à Actemium Lille Digital Solution, mon projet était de créer une application Windows facilitant l'installation de server client.
+              <br><br>Pour évité de faire de nombreuse manipulation sur l'ordinateur et perdre du temps sur un travail en cours, j'ai mis en place une application en C# s'occupant de faire les installations et les configurations sans interaction de la part de l'utilisateur.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    
+
+    <?php
+
+        $i = 0;
+
+        while ($i < 12) {
+          ?><br><?php
+          $i++;
+        }
+
+    ?>
+
 
     <hr>
 

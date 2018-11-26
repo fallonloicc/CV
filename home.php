@@ -47,7 +47,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Je m'appelle Loïc Fallon, j'ai 18 ans et je suis actuellement en BTS Services Informatiques aux Organisations, et j'ai choisi l'option SLAM : Solutions Logicielles et Applications Métiers<br>
+          <p>Je m'appelle Loïc Fallon, j'ai 19 ans et je suis actuellement en BTS Services Informatiques aux Organisations, et j'ai choisi l'option SLAM : Solutions Logicielles et Applications Métiers<br>
           Suite à ce BTS, j'envisage de continuer avec un Bachelor Chef de Projet Informatique et ensuite un master Expert en Ingénieurie Informatique.<br>
           Je suis actuellement à la recherche d'une alternance dans le domaine informatique et plus particulièrement dans la solution logiciel, le développement d'application mobile ou même la sécurité informatique.</p>
         </div>
