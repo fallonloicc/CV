@@ -50,7 +50,7 @@
           <p>Lors de mon stage de 1er année, j'ai dû créer une application facilitant les tours de terrains des techniciens. Le responsable informatique du site avait auparavant créé une interface pour le controle des machines,
           et me proposa de réaliser mon projet en ajoutant une fonctionnalité sur le site existant. Après quelque temps d'adaptation et de prise main, j'ai rapidemment compris l'utilité de Django et j'ai apprécié l'utilisé, c'est pourquoi mon choix de veille s'est porté dessus.</p>
           <br><p><b>Outils utilisés :</b></p>
-          <p>Afin de rester a jour, j'utilise principalement Google Alerts, ainsi que Netvibes qui repertorie chaque articles évoquant mon sujet de veille. Puis je repertorie les articles grâce à l'application Pocket qui me permet d'avoir accès aux documents sur tout mes appareils.</p>
+          <p>Afin de rester a jour, j'utilise principalement Google Alerts, ainsi que Netvibes qui repertorie chaque articles évoquant mon sujet de veille.<br> Puis je repertorie les articles grâce à l'application Pocket qui me permet d'avoir accès aux documents sur tout mes appareils.</p>
         </div>
       </div>
     </div>
