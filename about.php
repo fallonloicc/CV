@@ -129,7 +129,7 @@
             </li>
           </ul>
 
-          <p><b>Vous pouvez retrouver mon tableau de compétence en cliquant <a href="img/Synthese.pdf">ici.</a></b></p>
+          <p><b>Vous pouvez retrouver mon tableau de compétence en cliquant <a href="doc/Synthese.pdf">ici.</a></b></p>
         </div>
       </div>
     </div>
