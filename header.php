@@ -24,7 +24,11 @@
               <a class="nav-link" href="?page=loisirs">Loisirs</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="?page=comp">Veille Technologique</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="?page=contacte">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
