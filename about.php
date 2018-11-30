@@ -128,6 +128,8 @@
               <br><br>Pour évité de faire de nombreuse manipulation sur l'ordinateur et perdre du temps sur un travail en cours, j'ai mis en place une application en C# s'occupant de faire les installations et les configurations sans interaction de la part de l'utilisateur.
             </li>
           </ul>
+
+          <p><b>Vous pouvez retrouver mon tableau de compétence en cliquant <a href="img/Synthese.pdf">ici.</a></b></p>
         </div>
       </div>
     </div>
