@@ -21,6 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
 
+    <script src="js/jquery-2.2.4.min.js"></script>
   </head>
 
   <body>
@@ -49,60 +50,42 @@
           <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
           <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
           <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-          <form name="sentMessage" id="contactForm" action="" method="POST" novalidate>
+          <form name="sentMessage" id="contactForm" action="" method="" novalidate>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Nom</label>
-                <input type="text" class="form-control" placeholder="Nom" name="name" required data-validation-required-message="Entrez votre nom.">
+                <input type="text" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Entrez votre nom.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group col-xs-12 floating-label-form-group controls">
                 <label>Mail</label>
-                <input type="tel" class="form-control" placeholder="Mail" name="headers" required data-validation-required-message="Entrez votre mail.">
+                <input type="text" class="form-control" placeholder="Mail" id="headers" required data-validation-required-message="Entrez votre mail.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group col-xs-12 floating-label-form-group controls">
                 <label>Sujet</label>
-                <input type="tel" class="form-control" placeholder="Sujet" name="sujet" required data-validation-required-message="Entrez le sujet du mail.">
+                <input type="text" class="form-control" placeholder="Sujet" id="sujet" required data-validation-required-message="Entrez le sujet du mail.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Message</label>
-                <textarea rows="5" class="form-control" placeholder="Message" name="message" required data-validation-required-message="Entrez le message."></textarea>
+                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Entrez le message."></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <br>
+
             <div id="success"></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary" id="sendMessageButton">Envoyez</button>
-            </div>
           </form>
-          <?php
-            error_reporting(0);
-
-            if (isset($_POST['name'], $_POST['headers'], $_POST['sujet'], $_POST['message'])) {
-
-                $to = 'fallonloic@hotmail.fr';
-                $nom = $_POST['name'];
-                $mail = $_POST['headers'];
-                $sujet = $_POST['sujet'];
-                $message = $_POST['message'];
-
-                $entete = "Sujet : ".$sujet." de la part de ".$nom. " : ".$mail.".";
-                mail($to, $entete, $message);
-
-                echo "Mail envoyé !";
-            }
-
-          ?>
-
+          <div class="form-group">
+            <button onclick="mail()" class="btn btn-primary" id="sendMessageButton">Envoyez</button>
+          </div>
         </div>
       </div>
     </div>
@@ -110,12 +93,22 @@
     <hr>
 
     <!-- Bootstrap core JavaScript -->
+
+    <script type="text/javascript">
+
+      var name = document.getElementById('name');
+      var email = document.getElementById('headers');
+      var sujet = document.getElementById('sujet');
+      var message = document.getElementById('message');
+
+      $('button').click(function()
+      {
+        document.location.href = "mailto:fallonloic@hotmail.fr?subject="+sujet.value+ " de "+name.value+" : "+email.value+"&body=" + message.value;
+      });
+    </script>
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
