@@ -20,6 +20,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+    <!-- lien vers les scripts, v�rifier qu'ils se trouvent bien le dossier -->
+    <script type="text/javascript" src="js/shadowbox.js"></script>
+
+    <script type="text/javascript">
+    Shadowbox.init();
+    </script>
 
   </head>
 
@@ -122,13 +129,28 @@
               Checklist tour de terrain : Lors de mon stage en première année à la Française de Mécanique, j'avais pour mission de facilité le tour de terrain des techniciens.
               <br><br>Afin de répondre à ce besoin, j'ai créé une application mobile puis une interface web avec Python et le framework Django permettant aux techniciens de renseigner les informations, et au responsable de voir ces informations en temps réel.
             </li>
+            <table border="0" align="center">
+            	<tr>
+            		<td>
+                  <br>
+            			<a href="img/psa.png" rel="shadowbox[test2]"><u>Cliquez ici pour acceder aux screenshots de l'application.</u></a>
+            			<a href="img/psa1.png" rel="shadowbox[test2]"></a>
+            			<a href="img/psa2.png" rel="shadowbox[test2]"></a>
+            		</td>
+            	</tr>
+            </table>
             <br>
             <li>
               Installation server : En novembre, j'ai effectué un stage à Actemium Lille Digital Solution, mon projet était de créer une application Windows facilitant l'installation de server client.
               <br><br>Pour évité de faire de nombreuse manipulation sur l'ordinateur et perdre du temps sur un travail en cours, j'ai mis en place une application en C# s'occupant de faire les installations et les configurations sans interaction de la part de l'utilisateur.
             </li>
           </ul>
+          <br>
+          <div class="">
+            <img src="img/schemaActemium.png" width="100%">
+          </div>
 
+          <br>
           <p><b>Vous pouvez retrouver mon tableau de compétence en cliquant <a href="doc/Synthese.pdf">ici.</a></b></p><br>
           <p><b>Vous pouvez retrouver mon CV format papier en cliquant <a href="doc/Minimal Professional Resume.pdf">ici.</a></b></p>
         </div>
@@ -139,7 +161,7 @@
 
         $i = 0;
 
-        while ($i < 12) {
+        while ($i < 19) {
           ?><br><?php
           $i++;
         }
