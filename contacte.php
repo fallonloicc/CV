@@ -45,6 +45,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <p>Besoin de plus d'information ? Je vous répond au plus tôt !</p>
+          <p>Vous pouvez également me contacter au <u>06 27 31 01 04</u>.</p>
           <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
           <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
           <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
@@ -83,11 +84,11 @@
               <button type="submit" class="btn btn-primary" id="sendMessageButton">Envoyez</button>
             </div>
           </form>
-          <?php 
+          <?php
             error_reporting(0);
 
             if (isset($_POST['name'], $_POST['headers'], $_POST['sujet'], $_POST['message'])) {
-                
+
                 $to = 'fallonloic@hotmail.fr';
                 $nom = $_POST['name'];
                 $mail = $_POST['headers'];
@@ -98,7 +99,7 @@
                 mail($to, $entete, $message);
 
                 echo "Mail envoyé !";
-            }          
+            }
 
           ?>
 
