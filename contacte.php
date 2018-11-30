@@ -66,7 +66,7 @@
             </div>
             <div class="control-group">
               <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Mail</label>
+                <label>Sujet</label>
                 <input type="tel" class="form-control" placeholder="Sujet" name="sujet" required data-validation-required-message="Entrez le sujet du mail.">
                 <p class="help-block text-danger"></p>
               </div>
