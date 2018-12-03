@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
     <!-- lien vers les scripts, v�rifier qu'ils se trouvent bien le dossier -->
     <script type="text/javascript" src="js/shadowbox.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
 
     <script type="text/javascript">
     Shadowbox.init();
@@ -115,6 +116,12 @@
                 <br><br>Avec Loïck Thorel et Grégoire Somon, nous avons réalisé un site vitrine afin de présenter l'entreprise, un site e-commerce afin de proposer à la vente les produits de l'entreprise
                 , une application lourd permettant de gérer les départs et retour de nos produits ainsi que l'ajout de produit et enfin une application mobile pour facilité l'utilisation de nos produits.
             </li>
+            <button class="btn-primary">Aller vers le site PPE1</button>
+            <script>
+              $('button').click(function(
+                Window.location.url("https://galaxy-swiss-bourdin.000webhostapp.com/");
+              ));
+            </script>
             <br>
             <li>
                 Berceuse connecté : A la fin de la première année, nous avons pendant une semaine de workshop où nous avons dû réaliser une berceuse connecté.
