@@ -103,7 +103,7 @@
 
       $('button').click(function()
       {
-        document.location.href = "mailto:fallonloic@hotmail.fr?subject="+sujet.value+ " de "+name.value+" : "+email.value+"&body=" + message.value;
+        document.location.href = "mailto:fallonloic@hotmail.fr?subject="+sujet.value+ " || "+name.value+" || "+email.value+"&body=" + message.value;
       });
     </script>
 
