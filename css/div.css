@@ -1,0 +1,13 @@
+.techno
+{
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #6495ED;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 75%;
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+}

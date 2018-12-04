@@ -21,6 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+    <link rel="stylesheet" href="css/div.css">
     <!-- lien vers les scripts, v�rifier qu'ils se trouvent bien le dossier -->
     <script type="text/javascript" src="js/shadowbox.js"></script>
     <script src="js/jquery-2.2.4.min.js"></script>
@@ -113,15 +114,27 @@
 
             <li>
                 PPE : Au cours des deux années de BTS, nous avons eu pour mission de créer des sites et applications pour une entreprise fictive commercialisant des bornes photos.
-                <br><br>Avec Loïck Thorel et Grégoire Somon, nous avons réalisé un site vitrine afin de présenter l'entreprise, un site e-commerce afin de proposer à la vente les produits de l'entreprise
-                , une application lourd permettant de gérer les départs et retour de nos produits ainsi que l'ajout de produit et enfin une application mobile pour facilité l'utilisation de nos produits.
-            </li>
-            <button class="btn-primary"><a href="https://galaxy-swiss-bourdin.000webhostapp.com/">Aller vers le site PPE1</a></button>
-            <br>
+              </li>
+
+               <br>
+               <div style="text-align: center;">
+                 <div class="techno">
+                   <p><b>HTML / CSS / PHP</b></p>
+                 </div>
+                <br>
+                <br>
+                <a href="https://galaxy-swiss-bourdin.000webhostapp.com/"><u>Aller vers le site PPE1</u></a>
+                <br><br>
+              </div>
             <li>
                 Berceuse connecté : A la fin de la première année, nous avons pendant une semaine de workshop où nous avons dû réaliser une berceuse connecté.
-                <br><br>Grâce à un Raspberry Pi, nous avons créer une berceuse se déclenchant lorsque le nourrisson crie ainsi qu'une interface de contrôle pour que les parents puissent allumé et surveiller l'activité du nourrisson depuis un ordinateur ou un smartphone.
+
             </li>
+            <br>
+            <div style="text-align: center;">
+              <div class="techno">
+                <p><b>C</b></p>
+              </div>
 
           </ul>
 
@@ -131,7 +144,13 @@
               Checklist tour de terrain : Lors de mon stage en première année à la Française de Mécanique, j'avais pour mission de facilité le tour de terrain des techniciens.
               <br><br>Afin de répondre à ce besoin, j'ai créé une application mobile puis une interface web avec Python et le framework Django permettant aux techniciens de renseigner les informations, et au responsable de voir ces informations en temps réel.
             </li>
-            <table border="0" align="center">
+            <br>
+            <div style="text-align: center;">
+              <div class="techno">
+                <p><b>Python / Django / XML</b></p>
+              </div>
+            <br>
+            <table border="0" style="text-align: center; display: inline-block">
             	<tr>
             		<td>
                   <br>
@@ -141,14 +160,19 @@
             		</td>
             	</tr>
             </table>
-            <br>
+            <br><br>
             <li>
               Installation server : En novembre, j'ai effectué un stage à Actemium Lille Digital Solution, mon projet était de créer une application Windows facilitant l'installation de server client.
               <br><br>Pour évité de faire de nombreuse manipulation sur l'ordinateur et perdre du temps sur un travail en cours, j'ai mis en place une application en C# s'occupant de faire les installations et les configurations sans interaction de la part de l'utilisateur.
             </li>
           </ul>
           <br>
-          <div class="">
+          <div style="text-align: center;">
+            <div class="techno">
+              <p><b>C# / Winform</b></p>
+            </div>
+          <br><br>
+          <div align="center">
             <img src="img/schemaActemium.png" width="100%">
           </div>
 
