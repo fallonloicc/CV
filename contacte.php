@@ -60,13 +60,6 @@
             </div>
             <div class="control-group">
               <div class="form-group col-xs-12 floating-label-form-group controls">
-                <label>Mail</label>
-                <input type="text" class="form-control" placeholder="Mail" id="headers" required data-validation-required-message="Entrez votre mail.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group col-xs-12 floating-label-form-group controls">
                 <label>Sujet</label>
                 <input type="text" class="form-control" placeholder="Sujet" id="sujet" required data-validation-required-message="Entrez le sujet du mail.">
                 <p class="help-block text-danger"></p>
@@ -97,13 +90,33 @@
     <script type="text/javascript">
 
       var nom = document.getElementById('nom');
-      var email = document.getElementById('headers');
       var sujet = document.getElementById('sujet');
       var message = document.getElementById('message');
 
       $('#sendMessageButton').click(function()
       {
-        document.location.href = "mailto:fallonloic@hotmail.fr?subject=" + sujet.value + " || " + nom.value +"&body=" + message.value;
+        if (nom.value != "")
+        {
+            if (sujet.value != "")
+            {
+              if (message.value != "")
+              {
+                  document.location.href = "mailto:fallonloic@hotmail.fr?subject=" + sujet.value + " || " + nom.value +"&body=" + message.value;
+              }
+              else
+              {
+                document.getElementById('success').innerHTML = " Veuillez écrire un message."
+              }
+            }
+            else
+            {
+              document.getElementById('success').innerHTML = " Veuillez renseigner le sujet."
+            }
+          }
+        else
+        {
+          document.getElementById('success').innerHTML = " Veuillez renseigner votre nom."
+        }
       });
     </script>
 
