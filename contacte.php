@@ -54,7 +54,7 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Nom</label>
-                <input type="text" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Entrez votre nom.">
+                <input type="text" class="form-control" placeholder="Nom" id="nom" required data-validation-required-message="Entrez votre nom.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -84,7 +84,7 @@
             <div id="success"></div>
           </form>
           <div class="form-group">
-            <button onclick="mail()" class="btn btn-primary" id="sendMessageButton">Envoyez</button>
+            <button class="btn btn-primary" id="sendMessageButton">Envoyez</button>
           </div>
         </div>
       </div>
@@ -96,14 +96,14 @@
 
     <script type="text/javascript">
 
-      var name = document.getElementById('name');
+      var nom = document.getElementById('nom');
       var email = document.getElementById('headers');
       var sujet = document.getElementById('sujet');
       var message = document.getElementById('message');
 
       $('button').click(function()
       {
-        document.location.href = "mailto:fallonloic@hotmail.fr?subject="+sujet.value+ " || "+name.value+" || "+email.value+"&body=" + message.value;
+        document.location.href = "mailto:fallonloic@hotmail.fr?subject=" + sujet.value + " || " + nom.value +"&body=" + message.value;
       });
     </script>
 
