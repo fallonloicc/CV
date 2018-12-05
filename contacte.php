@@ -101,7 +101,7 @@
       var sujet = document.getElementById('sujet');
       var message = document.getElementById('message');
 
-      $('button').click(function()
+      $('#sendMessageButton').click(function()
       {
         document.location.href = "mailto:fallonloic@hotmail.fr?subject=" + sujet.value + " || " + nom.value +"&body=" + message.value;
       });
