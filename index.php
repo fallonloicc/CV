@@ -20,6 +20,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    
+
 
   </head>
 
@@ -39,12 +41,12 @@
 
         }
 
-        else 
+        else
 
         {
           include ("home.php");
 
-        }   
+        }
 
         include ("footer.php");
 
