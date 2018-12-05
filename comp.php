@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <script src="js/jquery-2.2.4.min.js"></script>
 
   </head>
 
@@ -43,14 +44,25 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Dans le cadre du BTS SIO, nous avons dû effectué une veille technologique sur le sujet de notre choix. Suite à un stage à la Française de Mécanique, mon choix s'est porté sur le framework Django.</p>
-          <br><p><b>Présentation :</b></p>
-          <p>Django est un framework écrit en  Python créé en 2005 par Adrian Holovaty et Simon Willison. Le but de ce framework est de réduire le temps de développement d'un site au travers d'une structure simple.</p>
-          <br><p><b>Pourquoi ce choix de veille ?</b></p>
-          <p>Lors de mon stage de 1er année, j'ai dû créer une application facilitant les tours de terrains des techniciens. Le responsable informatique du site avait auparavant créé une interface pour le controle des machines,
-          et me proposa de réaliser mon projet en ajoutant une fonctionnalité sur le site existant. Après quelque temps d'adaptation et de prise main, j'ai rapidemment compris l'utilité de Django et j'ai apprécié l'utilisé, c'est pourquoi mon choix de veille s'est porté dessus.</p>
-          <br><p><b>Outils utilisés :</b></p>
-          <p>Afin de rester a jour, j'utilise principalement Google Alerts, ainsi que Netvibes qui repertorie chaque articles évoquant mon sujet de veille.<br> Puis je repertorie les articles grâce à l'application Pocket qui me permet d'avoir accès aux documents sur tout mes appareils.</p>
+          <p>Dans le cadre du BTS SIO, nous avons dû effectué une veille technologique sur le sujet de notre choix. Suite à un stage à la Française de Mécanique, mon choix s'est porté sur le framework Django et le framework Flutter.</p>
+          <div style="text-align:center;">
+            <button type="button" class="btn btn-primary" id="veille1">Veille 1</button>
+            <button type="button" class="btn btn-primary" id="veille2">Veille 2</button>
+          </div>
+            <div class="veille" id="veille">
+
+            </div>
+            <script type="text/javascript">
+                $('#veille1').click(function()
+                {
+                  $('#veille').load('veille1.php');
+                });
+
+                $('#veille2').click(function()
+                {
+                  $('#veille').load('veille2.php');
+                });
+            </script>
         </div>
       </div>
     </div>
