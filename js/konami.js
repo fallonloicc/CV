@@ -44,7 +44,7 @@ function activateCheats() {
   //document.getElementsById('masthead').style.backgroundImage = "url('img/konami.jpg')";
   $('#masthead').css("background-image", "url(img/konami.jpg)");
   $('#pres').css("color", "white");
-  $('body').css("background", "pink");
+  $('body').css("background", "#FF00FF");
   $('#pres').text("J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES !J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES ! J'AIME LES LICORNES !J'AIME LES LICORNES ! J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES !J'AIME LES LICORNES ! ");
 
   alert("cheats activated");
