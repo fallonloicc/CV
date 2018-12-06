@@ -1,5 +1,5 @@
 <br><p><b>Présentation :</b></p>
-<p>Flutter est un framework écrit en Dart créé en 2015 par les développeurs Google. Le but de ce framework est de réduire le temps de développement d'une application mobile</p>
+<p>Flutter est un framework écrit en Dart créé en 2017 par les développeurs Google. Le but de ce framework est de réduire le temps de développement d'une application mobile</p>
 <div style="text-align: center;"><br><img src="img/flutter.jpg" width="300"></div>
 <br><p><b>Pourquoi ce choix de veille ?</b></p>
 <p>Après plusieurs recherche sur une technologique récente, j'ai trouvé le langage "Dart" créé par Google en 2011, puis après le framework Flutter permettant de développer des applications Android et IOS
