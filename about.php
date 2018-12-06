@@ -25,6 +25,13 @@
     <!-- lien vers les scripts, v�rifier qu'ils se trouvent bien le dossier -->
     <script type="text/javascript" src="js/shadowbox.js"></script>
     <script src="js/jquery-2.2.4.min.js"></script>
+    <script>
+        $(function(){
+          $('#scrolltop').click(function(){
+            $('html, body').animate({scrollTop:0},'slow');
+          });
+        });
+    </script>
 
     <script type="text/javascript">
     Shadowbox.init();
@@ -179,9 +186,14 @@
           <br>
           <p><b>Vous pouvez retrouver mon tableau de compétence en cliquant <a href="doc/Synthese.pdf">ici.</a></b></p><br>
           <p><b>Vous pouvez retrouver mon CV format papier en cliquant <a href="doc/Minimal Professional Resume.pdf">ici.</a></b></p>
+
         </div>
+        <img src="img/fleche.png" id="scrolltop" style="cursor: pointer; float: right;" width="50px">
       </div>
     </div>
+
+
+
 
     <?php
 
