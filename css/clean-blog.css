@@ -423,3 +423,7 @@ footer .copyright {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
+
+.espace {
+  padding: 10%;
+}

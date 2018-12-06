@@ -52,15 +52,18 @@
           <div style="text-align: center">
           	<a href="https://site.groupe-psa.com/francaise-de-mecanique/fr/"><img class="zoom" src="img/FM.jpg" width="250"></a><br>
           </div>
+          <div class="espace"> </div>
           <p><b>Poste de serveur pendant 7 mois :</b><br><br> Serveur en semaine au restaurant "Le Colibri" à Douvrin ainsi qu'extra pour des mariages, repas d'entreprise ,etc le week end.</p>
           <div style="text-align: center">
           	<a href="http://www.hotellecolibri.com/"><img class="zoom" src="img/hotel-douvrin.png" width="250"></a><br>
           </div>
+          <div class="espace"> </div>
           <p><b>Stage d'un mois en 2017 à Iris Informatique.</b><br><br>Mission: gestion de parc électronique, réparation d'appareils électroniques, gestion des stocks.</p>
           <br>
           <div style="text-align: center">
           	<a href="http://www.iris-info.com/"><img class="zoom" src="img/iris.png" width="250"></a><br>
           </div>
+          <div class="espace"> </div>
           <p><b>Stage d'une semaine à la Métropole Européenne de Lille.</b><br><br>Mission: gestion de ticket, administration réseaux.</p>
           <br>
           <div style="text-align: center">
