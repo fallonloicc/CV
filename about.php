@@ -115,7 +115,7 @@
           </div>
 
           <br>
-
+          <div class="espace"> </div>
           <p><b>Voici les projets réalisés à l'école :</b></p>
           <ul>
 
@@ -144,7 +144,7 @@
               </div>
 
           </ul>
-
+          <div class="espace"> </div>
           <p><b>Voici les projets réalisés en stage :</b></p>
           <ul>
             <li>
@@ -183,6 +183,7 @@
             <img src="img/schemaActemium.png" width="100%">
           </div>
 
+          <div class="espace"> </div>
           <br>
           <p><b>Vous pouvez retrouver mon tableau de compétence en cliquant <a href="doc/Synthese.pdf">ici.</a></b></p><br>
           <p><b>Vous pouvez retrouver mon CV format papier en cliquant <a href="doc/Minimal Professional Resume.pdf">ici.</a></b></p>
