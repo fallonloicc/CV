@@ -7,3 +7,12 @@
 <br><p><b>Outils utilisés :</b></p>
 <p>Afin de rester a jour, j'utilise principalement Google Alerts, ainsi que Netvibes qui repertorie chaque articles évoquant mon sujet de veille.<br> Puis je repertorie les articles grâce à l'application Pocket qui me permet d'avoir accès aux documents sur tout mes appareils.</p>
 <div style="text-align: center;"><br><img src="img/pocket.png" width="100"><img src="img/netvibes.png" width="300"></div>
+<img src="img/fleche.png" id="scrolltop" style="cursor: pointer; float: right;" width="50px">
+
+<script>
+    $(function(){
+      $('#scrolltop').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+      });
+    });
+</script>
