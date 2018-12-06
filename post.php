@@ -47,13 +47,13 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <b><p>Efficom Lille: 2017</p></b>
             <p>BTS Services aux Organisations options solutions logicielles et applications métiers.</p><br>
-            <div style="text-align: center">
-            	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10123.135781601475!2d3.0634145!3d50.6311303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5237f284c33fce7e!2sEFFICOM+Lille!5e0!3m2!1sfr!2sfr!4v1523862967196" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div style="text-align: center;">
+            	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10123.135781601475!2d3.0634145!3d50.6311303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5237f284c33fce7e!2sEFFICOM+Lille!5e0!3m2!1sfr!2sfr!4v1523862967196" frameborder="0" style="border:0; width:100%; height: 300px;"; allowfullscreen></iframe>
         	</div>
             <b><p>Lycée St Paul Lens: 2014</p></b>
             <p>Baccalauréat STMG spécialitée mercatique, mention bien.</p>
             <div style="text-align: center">
-            	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10165.068687176783!2d2.8224832!3d50.436124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x742251c2b0f97e9c!2sLyc%C3%A9e+Saint+Paul!5e0!3m2!1sfr!2sfr!4v1523863099174" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10165.068687176783!2d2.8224832!3d50.436124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x742251c2b0f97e9c!2sLyc%C3%A9e+Saint+Paul!5e0!3m2!1sfr!2sfr!4v1523863099174" width="600" height="450" frameborder="0" style="border:0; width:100%; height: 300px;" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@
 
     <hr>
 
-    
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
