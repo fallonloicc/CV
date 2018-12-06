@@ -68,6 +68,7 @@
         </div>
       </div>
     </div>
+    <div class="espace"> </div>
     <img class="imgloisir" src="img/basket.png" width="20%" height="35%">
     <img class="imgloisir" src="img/4maison.png" width="20%" height="35%">
     <img class="imgloisir" src="img/Mario.png" width="20%" height="35%">
