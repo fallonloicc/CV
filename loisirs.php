@@ -61,14 +61,13 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <p>Grand passioné de basketball, de skateboard, de jeux de cartes et de jeux vidéos.</p>
           <p>Je suis fan de Stephen Curry, un joueur de basket évoluant au Golden States Warrios, et de Richie Jackson, un skateur au look décalé. Mes jeux préférés sont Assasin's Creed Odyssey, TrackMania Stadium, Overwatch, NBA 2k18 sur PC et Mario Aces sur Nintendo Switch. Je suis aussi un fervant fan de la série et du jeu de carte Yu Gi OH.</p>
-          <p>Je sors également beaucoup avec mes amis pour diverse activité (laser game, skateboard, karting, soirée ...)</p>
-          <p>Passionnée par la science-fiction et la fantaisie, je suis un grand fan d'Harry Potter, de Star Wars et du Seigneur des anneaux.<br> Je traine également sur les réseaux sociaux et reste connecté à l'actualité informatique / geek par le biais de site tel qu'Hitek, JournalDuGeek ou 01.net</p>
+          <p>Je sors également beaucoup avec mes amis pour diverses activités (laser game, skateboard, karting, soirée ...)</p>
+          <p>Passionné par la science-fiction et la fantaisie, je suis un grand fan d'Harry Potter, de Star Wars et du Seigneur des anneaux.<br> Je traine également sur les réseaux sociaux et reste connecté à l'actualité informatique / geek par le biais de site tel qu'Hitek, JournalDuGeek ou 01.net</p>
 
 
         </div>
       </div>
     </div>
-    <div class="espace"> </div>
     <img class="imgloisir" src="img/basket.png" width="20%" height="35%">
     <img class="imgloisir" src="img/4maison.png" width="20%" height="35%">
     <img class="imgloisir" src="img/Mario.png" width="20%" height="35%">
