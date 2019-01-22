@@ -427,3 +427,8 @@ footer .copyright {
 .espace {
   padding: 10%;
 }
+
+.article {
+  background-color: pink;
+  border: 5px solid black;
+}
