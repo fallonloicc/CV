@@ -381,11 +381,18 @@ onAuthorize: function (data, actions) {
 }, '#paypal-button-container');
 </script>
 <script type="text/javascript">
+
+	var evnt = $("#event-select").val();
+	print('oui');
+
 	$("#paypal-button-container").click( function(){
 		<?php
-			$req = "INSERT INTO "
+		echo "oui";
+			$date = date();
+			echo "INSERT INTO commande (dateCommande, debutDate, finDate, payement, idEvenement) VALUES ('".$date."','25 janvier 2019', '26 janvier 2019','".MontantGlobal()."', '"?>+ evnt +<?php"')";
 		?>
 	});
+</script>
 </script>
 </body>
 </html>

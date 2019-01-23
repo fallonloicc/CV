@@ -1,14 +1,15 @@
 <?php
+	session_start();
 	include('header.php');
 	include('params/db.php');
 
 	$id = $_GET['id'];
 	$type =$_GET['type'];
 
-	if ($type = "1") {
+	if ($type == "1") {
 		$req ='SELECT * FROM bornes WHERE idBornes LIKE '.$id.'';
 	}
-	if ($type = "2") {
+	if ($type == "2") {
 		$req ='SELECT * FROM consommables WHERE idConsosommables LIKE '.$id.'';
 	}
 	$oui = $bdd->query($req);
@@ -625,6 +626,13 @@
 </script>
 <!--===============================================================================================-->
 <script src="js/main.js"></script>
+<script>
 
+		$("#ajoutbtn").click(function(){
+			var qte = $("#ajoutval").val();
+			var go = "cart.php?action=ajout&l=<?php echo $requete->libelle ?>&q="+ qte +"&p=<?php echo $requete->prix ?>"
+			document.location.href= go;
+		});
+	</script>
 </body>
 </html>
