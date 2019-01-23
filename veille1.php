@@ -14,7 +14,7 @@ et me proposa de réaliser mon projet en ajoutant une fonctionnalité sur le sit
 
 <br><p><b>Articles :</b></p>
 <div class="article">
-  
+
   <?php
       $member=""; //optionnel si vous etes inscrit sur la plateforme actifpub  le parametrage se fait dans votre espace membre
       $fichier="https://www.google.com/alerts/feeds/04375351586635854532/13619826572917629731";
@@ -47,6 +47,7 @@ et me proposa de réaliser mon projet en ajoutant une fonctionnalité sur le sit
 
    ?>
 </div>
+<br>
 <img src="img/fleche.png" id="scrolltop" style="cursor: pointer; float: right;" width="50px">
 
 <script>
