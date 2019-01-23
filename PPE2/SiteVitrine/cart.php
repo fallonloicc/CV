@@ -123,6 +123,7 @@
 						echo "<option value='".$requete->libelle."'>".$requete->libelle."</option>";
 					}
 					echo "</select>";
+					echo "<br>";
 					echo '<span class="m-text22 w-size19 w-full-sm"> Total : </span>';
 					echo "<span class='m-text22 w-size19 w-full-sm'>".MontantGlobal()." €</span>";
 
