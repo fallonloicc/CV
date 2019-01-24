@@ -56,7 +56,7 @@
 					</div>
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Mot de passe requis">
 						<span class="label-input100">Mot de passe</span>
-						<input class="input100" id="passwd" type="Paswword" name="passwd" placeholder="Entrez un mot de passe" value="">
+						<input class="input100" id="passwd" type="Password" name="passwd" placeholder="Entrez un mot de passe" value="">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Confirmation requise">
