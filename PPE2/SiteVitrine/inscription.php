@@ -38,7 +38,7 @@
 					</span>
 				</div>
 
-				<form id="theform" name="formulaire" method="POST" class="login100-form validate-form">
+				<form id="theform" name="formulaire" action="index.php" method="POST" class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Nom requis">
 						<span class="label-input100">Nom</span>
 						<input class="input100" type="text" name="nom" placeholder="Entrez nom">
