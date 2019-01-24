@@ -121,7 +121,7 @@ if (isset($_POST['nom'], $_POST['prenom'], $_POST['passwd'], $_POST['email'], $_
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div>
-							<a href="Inscription.php" class="txt1">
+							<a href="inscription.php" class="txt1">
 								Inscrivez-vous ici.
 							</a>
 						</div>
