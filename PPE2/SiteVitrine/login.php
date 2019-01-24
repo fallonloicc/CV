@@ -18,6 +18,7 @@ if(isset($_POST['user'])&& isset($_POST['passwd'])){
 				$_SESSION['email'] = $usr->email ;
 				$_SESSION['nom'] =$usr->nom ;
 				$_SESSION['prenom'] = $usr->prenom;
+				
 			}
 			else
 			{
