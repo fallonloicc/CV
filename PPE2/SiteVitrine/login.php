@@ -3,6 +3,7 @@
 include ('params/db.php');
 
 if(isset($_POST['user'])&& isset($_POST['passwd'])){
+	echo "oui";
 	//echo "republique!   check" . "<br>";
 	$login = addslashes($_POST['user']);
 	$passwd = md5($_POST['passwd']);

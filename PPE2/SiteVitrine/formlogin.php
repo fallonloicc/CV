@@ -106,7 +106,7 @@ if (isset($_POST['nom'], $_POST['prenom'], $_POST['passwd'], $_POST['email'], $_
 					</span>
 				</div>
 
-				<form class="login100-form validate-form" method="POST">
+				<form class="login100-form validate-form" action="login.php" method="POST">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Entrez un email valide">
 						<span class="label-input100">E-mail</span>
 						<input class="input100" type="email" name="user" placeholder="Entrez votre email">
