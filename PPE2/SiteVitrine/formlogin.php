@@ -32,41 +32,6 @@
 	<?php
 include ('params/db.php');
 
-if(isset($_POST['user'])&& isset($_POST['passwd'])){
-	//echo "republique!   check" . "<br>";
-	$login = addslashes($_POST['user']);
-	$passwd = md5($_POST['passwd']);
-	$reqUsr = 'SELECT * FROM clients WHERE email LIKE "'. $login.'"';
-	if ($recupUsr = $bdd->query($reqUsr))
-	{
-		if($usr = $recupUsr->fetch())
-		{
-			if($usr->passwd == $passwd)
-			{
-				//echo "BIENVENUE DANS L'AUBERGE ! ";
-				$_SESSION['email'] = $usr->email ;
-				$_SESSION['nom'] =$usr->nom ;
-				$_SESSION['prenom'] = $usr->prenom;
-			}
-			else
-			{
-				echo " FAKE PASSWORD !! ";
-			}
-		}
-		else
-		{
-			echo "mauvais login ou password";
-		}
-	}
-	else
-	{
-		echo "  erreur dans la requete";
-	}
-}
-else
-{
-}
-
 if (isset($_POST['nom'], $_POST['prenom'], $_POST['passwd'], $_POST['email'], $_POST['tel'], $_POST['cp'], $_POST['ville'], $_POST['adresse'])) {
 
 			$nom = addslashes($_POST['nom']);
