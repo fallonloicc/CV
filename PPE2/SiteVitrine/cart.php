@@ -95,7 +95,7 @@ include('header.php');
                 echo "</table>";
                 echo "</div>";
                 echo "</div>";
-                echo "<input type=\"submit\" class='flex-c-m bg1 bo-rad-23 hov1 s-text1 trans-0-4' style='padding: 0 15px 0 15px;  margin: 2% 0 1% 3.5%;' value=\"Rafraichir\"/>";
+                echo "<input type=\"submit\" class='flex-c-m bg1 bo-rad-23 hov1 s-text1 trans-0-4' style='padding: 0 58px 0 58px;  margin: 2% 0 1% 0;' value=\"Rafraichir\"/>";
                 echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
                 echo "<a href='product.php'><input type='button' class='flex-c-m bg1 bo-rad-23 hov1 s-text1 trans-0-4' style=' padding: 0 15px 0 15px;' value='Revenir à vos achats'></a>";
                 echo '<div class="bo9 w-size18 p-l-40 p-r-40 p-t-30 p-b-38 m-t-30 m-r-0 m-l-auto p-lr-15-sm">';
@@ -111,8 +111,8 @@ include('header.php');
                 echo "<tr><td colspan=\"4\">";
                 echo "</td></tr></br>";
                 echo '<span class="m-text22 w-size19 w-full-sm"> Total : </span>';
-                echo "<span class='m-text22 w-size19 w-full-sm'>".MontantGlobal()." €</span>";
-                echo"<div style='margin-left: 40%; margin-top: 10%;' id='paypal-button-container'></div>";
+                echo "<span class='m-text22 w-size19 w-full-sm' id='total'>".MontantGlobal()." €</span>";
+                echo"<div style='margin: 10% 25% 0 25% ;' id='paypal-button-container'></div>";
             }
             echo "</table>";
             echo "</div>";
@@ -274,10 +274,10 @@ include('header.php');
         env: 'sandbox', // sandbox | production
 // Specify the style of the button
         style: {
-            layout: 'horizontal',  // horizontal | vertical
+            layout: 'vertical',  // horizontal | vertical
             size:   'responsive',    // medium | large | responsive
-            shape:  'pill',      // pill | rect
-            color:  'black'       // gold | blue | silver | white | black
+            shape:  'rect',      // pill | rect
+            color:  'gold'       // gold | blue | silver | white | black
         },
 // Specify allowed and disallowed funding sources
 //
@@ -306,8 +306,8 @@ include('header.php');
                     transactions: [
                         {
                             amount: {
-                                total: '0.01',
-                                currency: 'USD'
+                                total: '<?php echo MontantGlobal(); ?>',
+                                currency: 'EUR'
                             }
                         }
                     ]
@@ -322,12 +322,6 @@ include('header.php');
         }
     }, '#paypal-button-container');
 </script>
-<script type="text/javascript">
-    $("#paypal-button-container").click( function(){
-        <?php
-        $req = "INSERT INTO "
-        ?>
-    });
-</script>
+
 </body>
 </html>
