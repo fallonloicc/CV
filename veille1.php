@@ -13,7 +13,7 @@ et me proposa de réaliser mon projet en ajoutant une fonctionnalité sur le sit
 <div style="text-align: center;"><br><img src="img/pocket.png" width="100"><img src="img/netvibes.png" width="300"></div>
 
 <br><p><b>Articles :</b></p><br>
-<iframe src="//www.pearltrees.com/fallonloic/django/id23714150?embed=2&d=201901231037" width="560" height="413" style="border:0px;" allowtransparency="true"></iframe><span style="display:block; padding-top:2px; color:#818181; font-size:13px;"><a href="http://www.pearltrees.com/poulet_mayo/django/id23714150" style=" color:#818181; font-size:13px;" target="_blank">Django</a>, par <a href="http://www.pearltrees.com/poulet_mayo" style=" color:#818181; font-size:13px;" target="_blank">poulet_mayo</a></span>
+<iframe src="//www.pearltrees.com/fallonloic/django/id23714150?embed=2&d=201901231037" width="560" height="413" style="border:0px;" allowtransparency="true"></iframe><span style="display:block; padding-top:2px; color:#818181; font-size:13px;"><a href="http://www.pearltrees.com/fallonloic/django/id23714150" style=" color:#818181; font-size:13px;" target="_blank">Django</a>, par <a href="http://www.pearltrees.com/fallonloic" style=" color:#818181; font-size:13px;" target="_blank">Loïc Fallon</a></span>
 <br>
 <img src="img/fleche.png" id="scrolltop" style="cursor: pointer; float: right;" width="50px">
 
