@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cdc3b67-6bb1-46b9-9482-d2fd108d2410" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/about.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/params/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/params/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/product-detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/product-detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/konami.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/konami.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/veille1.php" beforeDir="false" afterPath="$PROJECT_DIR$/veille1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/veille2.php" beforeDir="false" afterPath="$PROJECT_DIR$/veille2.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,70 +21,88 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/product.php">
+        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="75" column="25" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="75" selection-end-column="25" />
+            <state relative-caret-position="2312">
+              <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/params/db.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/about.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="223" column="11" lean-forward="true" selection-end-line="223" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/account.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/cart.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="324" lean-forward="true" selection-start-line="324" selection-end-line="324" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/inscription.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/konami.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/veille1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/veille2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/listeadmin.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/product-detail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8466">
+              <caret line="498" column="7" selection-start-line="498" selection-start-column="7" selection-end-line="498" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3927">
+              <caret line="231" column="4" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/index.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -88,9 +115,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/account.php" />
-        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/cart.php" />
         <option value="$PROJECT_DIR$/PPE2/SiteVitrine/params/db.php" />
+        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/footer.php" />
+        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/account.php" />
+        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/about.php" />
+        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/product.php" />
+        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/cart.php" />
+        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/contact.php" />
+        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/home.php" />
+        <option value="$PROJECT_DIR$/PPE2/SiteVitrine/product-detail.php" />
+        <option value="$PROJECT_DIR$/js/konami.js" />
+        <option value="$PROJECT_DIR$/veille1.php" />
+        <option value="$PROJECT_DIR$/veille2.php" />
       </list>
     </option>
   </component>
@@ -121,20 +157,7 @@
             <path>
               <item name="CV" type="b2602c69:ProjectViewProjectNode" />
               <item name="CV" type="462c0819:PsiDirectoryNode" />
-              <item name="PPE2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CV" type="462c0819:PsiDirectoryNode" />
-              <item name="PPE2" type="462c0819:PsiDirectoryNode" />
-              <item name="SiteVitrine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CV" type="462c0819:PsiDirectoryNode" />
-              <item name="PPE2" type="462c0819:PsiDirectoryNode" />
-              <item name="SiteVitrine" type="462c0819:PsiDirectoryNode" />
-              <item name="params" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -180,18 +203,24 @@
       <workItem from="1549615255352" duration="901000" />
       <workItem from="1549618838440" duration="337000" />
       <workItem from="1549975148639" duration="468000" />
-      <workItem from="1549976260681" duration="5051000" />
+      <workItem from="1549976260681" duration="6362000" />
+      <workItem from="1550044363959" duration="1314000" />
+      <workItem from="1550147599660" duration="629000" />
+      <workItem from="1551789941837" duration="2568000" />
+      <workItem from="1551894583841" duration="35000" />
+      <workItem from="1552985076254" duration="3746000" />
+      <workItem from="1553008795130" duration="113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6757000" />
+    <option name="totallyTimeSpent" value="16473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994233" visible="true" weight="0.18603411" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994233" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" sideWeight="0.5005767" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -210,51 +239,49 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/product-detail.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="223" column="11" lean-forward="true" selection-end-line="223" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/inscription.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="75" column="25" lean-forward="true" selection-start-line="64" selection-start-column="28" selection-end-line="75" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+        <state relative-caret-position="433">
+          <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/params/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/cart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="324" lean-forward="true" selection-start-line="324" selection-end-line="324" />
+        <state relative-caret-position="153">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
           <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
@@ -264,10 +291,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/params/db.php">
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="663">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2312">
+          <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/inscription.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/listeadmin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/product-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8466">
+          <caret line="498" column="7" selection-start-line="498" selection-start-column="7" selection-end-line="498" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3927">
+          <caret line="231" column="4" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/SiteVitrine/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/konami.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/veille1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/veille2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
         </state>
       </provider>
     </entry>
