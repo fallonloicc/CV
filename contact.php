@@ -50,25 +50,25 @@
 
           <p><b>Stage d'un mois en 2018 à Actemium Lille Digital Solution.</b><br><br>Mission: Mise en place d'une application en C# dans le but de facilité l'installation de server.</p>
           <div style="text-align: center">
-          	<a href=""><img class="zoom" src="img/ALDS.png" width="250"></a><br>
+          	<a href="https://www.actemium.fr/fr/lille-digital-solutions/presentation/"><img class="zoom" src="img/ALDS.png" width="250"></a><br>
           </div>
-          <div class="espace"> </div>
+            <div style="padding: 5%;"></div>
           <p><b>Stage de deux mois en 2018 à la Française de Mécanique.</b><br><br>Mission: Mise en place d'une application mobile en JAVA et d'une interface web en Python avec le framework Django afin de facilité le tour de terrain des techniciens lors de la prise de poste.</p>
           <div style="text-align: center">
           	<a href="https://site.groupe-psa.com/francaise-de-mecanique/fr/"><img class="zoom" src="img/FM.jpg" width="250"></a><br>
           </div>
-          <div class="espace"> </div>
+            <div style="padding: 5%;"></div>
           <p><b>Poste de serveur pendant 7 mois :</b><br><br> Serveur en semaine au restaurant "Le Colibri" à Douvrin ainsi qu'extra pour des mariages, repas d'entreprise le week end.</p>
           <div style="text-align: center">
           	<a href="http://www.hotellecolibri.com/"><img class="zoom" src="img/hotel-douvrin.png" width="250"></a><br>
           </div>
-          <div class="espace"> </div>
+            <div style="padding: 5%;"></div>
           <p><b>Stage d'un mois en 2017 à Iris Informatique.</b><br><br>Mission: gestion de parc électronique, réparation d'appareils électroniques, gestion des stocks.</p>
           <br>
           <div style="text-align: center">
           	<a href="http://www.iris-info.com/"><img class="zoom" src="img/iris.png" width="250"></a><br>
           </div>
-          <div class="espace"> </div>
+            <div style="padding: 5%;"></div>
           <p><b>Stage d'une semaine à la Métropole Européenne de Lille.</b><br><br>Mission: gestion de ticket, administration réseaux.</p>
           <br>
           <div style="text-align: center">
