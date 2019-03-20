@@ -126,13 +126,15 @@
                <br>
                <div style="text-align: center;">
                  <div class="techno">
-                   <p><b>Languages : HTML / CSS / PHP</b></p>
+                   <p><b>Languages : HTML / CSS / JS / PHP</b></p>
                  </div>
                 <br>
                 <br>
-                <a href="https://galaxy-swiss-bourdin.000webhostapp.com/"><u>Aller vers le site PPE1</u></a>
+                   <a href="https://galaxy-swiss-bourdin.000webhostapp.com/"><u>Aller vers le site PPE1</u></a><br>
+                   <a href="https://fallonloic.fr/PPE2/SiteVitrine/"><u>Aller vers le site PPE2</u></a>
                 <br><br>
               </div>
+              <div style="padding: 10%;"></div>
             <li>
                 Berceuse connecté : A la fin de la première année, nous avons pendant une semaine de workshop où nous avons dû réaliser une berceuse connecté.
 
@@ -167,7 +169,7 @@
             		</td>
             	</tr>
             </table>
-            <br><br><br>
+            <div style="padding: 10%;"></div>
             <li>
               Installation server : En novembre, j'ai effectué un stage à Actemium Lille Digital Solution, mon projet était de créer une application Windows facilitant l'installation de server client.
               <br><br>Pour évité de faire de nombreuses manipulations sur l'ordinateur et perdre du temps sur un travail en cours, j'ai mis en place une application en C# s'occupant de faire les installations et les configurations sans interaction de la part de l'utilisateur.
@@ -178,7 +180,7 @@
             <div class="techno">
               <p><b>Languages : C# / Winform</b></p>
             </div>
-          <br><br>
+              <div style="padding: 5%;"></div>
           <div align="center">
             <img src="img/schemaActemium.png" width="100%">
           </div>
@@ -211,7 +213,7 @@
 
         $i = 0;
 
-        while ($i < 19) {
+        while ($i < 26) {
           ?><br><?php
           $i++;
         }
