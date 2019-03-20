@@ -126,7 +126,7 @@
                <br>
                <div style="text-align: center;">
                  <div class="techno">
-                   <p><b>HTML / CSS / PHP</b></p>
+                   <p><b>Languages : HTML / CSS / PHP</b></p>
                  </div>
                 <br>
                 <br>
@@ -140,7 +140,7 @@
             <br>
             <div style="text-align: center;">
               <div class="techno">
-                <p><b>C</b></p>
+                <p><b>Languages : C</b></p>
               </div>
 
           </ul>
@@ -154,7 +154,7 @@
             <br>
             <div style="text-align: center;">
               <div class="techno">
-                <p><b>Python / Django / XML</b></p>
+                <p><b>Languages : Python / Django / XML</b></p>
               </div>
             <br>
             <table border="0" style="text-align: center; display: inline-block">
@@ -167,21 +167,32 @@
             		</td>
             	</tr>
             </table>
-            <br><br>
+            <br><br><br>
             <li>
               Installation server : En novembre, j'ai effectué un stage à Actemium Lille Digital Solution, mon projet était de créer une application Windows facilitant l'installation de server client.
-              <br><br>Pour évité de faire de nombreuse manipulation sur l'ordinateur et perdre du temps sur un travail en cours, j'ai mis en place une application en C# s'occupant de faire les installations et les configurations sans interaction de la part de l'utilisateur.
+              <br><br>Pour évité de faire de nombreuses manipulations sur l'ordinateur et perdre du temps sur un travail en cours, j'ai mis en place une application en C# s'occupant de faire les installations et les configurations sans interaction de la part de l'utilisateur.
             </li>
           </ul>
           <br>
           <div style="text-align: center;">
             <div class="techno">
-              <p><b>C# / Winform</b></p>
+              <p><b>Languages : C# / Winform</b></p>
             </div>
           <br><br>
           <div align="center">
             <img src="img/schemaActemium.png" width="100%">
           </div>
+
+              <table border="0" style="text-align: center; display: inline-block">
+                  <tr>
+                      <td>
+                          <br>
+                          <a href="img/Actemium%20(1).png" rel="shadowbox[test2]"><u>Cliquez ici pour acceder aux screenshots de l'application.</u></a>
+                          <a href="img/Actemium%20(2).png" rel="shadowbox[test2]"></a>
+                          <a href="img/Actemium%20(3).png" rel="shadowbox[test2]"></a>
+                      </td>
+                  </tr>
+              </table>
 
           <div class="espace"> </div>
           <br>
