@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cdc3b67-6bb1-46b9-9482-d2fd108d2410" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/PPE2/LoicGregLoick.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE2/SiteVitrine/params/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/SiteVitrine/params/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE2/params/insertborne.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE2/params/insertconso.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE2/params/logout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE2/params/stock.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE2/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE2/API/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/PPE2/API/db.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,16 +35,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PPE2/API/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="102">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PPE2/API/ajoutborne.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -108,9 +100,9 @@
         <option value="$PROJECT_DIR$/PPE2/API/conso.php" />
         <option value="$PROJECT_DIR$/PPE2/API/genere_json.php" />
         <option value="$PROJECT_DIR$/PPE2/API/suppborne.php" />
-        <option value="$PROJECT_DIR$/PPE2/API/db.php" />
         <option value="$PROJECT_DIR$/PPE2/API/ajoutconso.php" />
         <option value="$PROJECT_DIR$/PPE2/API/ajoutborne.php" />
+        <option value="$PROJECT_DIR$/PPE2/API/db.php" />
       </list>
     </option>
   </component>
@@ -216,12 +208,12 @@
       <workItem from="1553071653321" duration="1283000" />
       <workItem from="1553076602471" duration="1252000" />
       <workItem from="1553241585015" duration="8358000" />
-      <workItem from="1554912405356" duration="953000" />
+      <workItem from="1554912405356" duration="1256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29183000" />
+    <option name="totallyTimeSpent" value="29486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -409,13 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PPE2/API/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PPE2/API/bornes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -434,6 +419,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE2/API/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>
