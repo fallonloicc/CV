@@ -18,8 +18,9 @@ include_once "utils.php";
 
         
         echo "Ajout réussi";
+        exit();
     }
-    if(isset($_GET['prix'])&& isset($_GET['libelle'])&& isset($_GET['adresseMac'])&& isset($_GET['adresseIp'])&& !isset($_GET['urlImage']))
+    if(isset($_GET['prix'])&& isset($_GET['libelle'])&& isset($_GET['adresseMac'])&& isset($_GET['adresseIp']))
     {
         $prix = $_GET['prix'];
         $libelle = $_GET['libelle'];
@@ -33,6 +34,7 @@ include_once "utils.php";
         
         
         echo "Ajout réussi";
+        exit();
     }
     else
     {
