@@ -19,6 +19,21 @@ include_once "utils.php";
         
         echo "Ajout réussi";
     }
+    if(isset($_GET['prix'])&& isset($_GET['libelle'])&& isset($_GET['adresseMac'])&& isset($_GET['adresseIp']))
+    {
+        $prix = $_GET['prix'];
+        $libelle = $_GET['libelle'];
+        $Mac = $_GET['adresseMac'];
+        $Ip = $_GET['adresseIp'];
+        
+        $req ='INSERT INTO bornes (prix, libelle, adresseMac, adresseIp) VALUES ("'.$prix.'","'.$libelle.'", "'.$Mac.'", "'.$Ip.'")';
+        
+        $statement = getPdo()->prepare($req);
+        $statement->execute();
+        
+        
+        echo "Ajout réussi";
+    }
     else
     {
         echo "Problème chef";
