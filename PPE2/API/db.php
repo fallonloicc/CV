@@ -2,9 +2,9 @@
 
 function getPdo()
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=efficom_loic', "loicfallon", "efficom");
-    //$bdd = new PDO('mysql:host=localhost;dbname=loicgregloick', "root", "");
-    $bdd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-    return $bdd;
+    $dsn = "mysql:host=localhost;dbname=efficom_loic";
+    $dbh = new PDO($dsn, "loicfallon", "efficom", array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+    return $dbh;
+    
 }
 
