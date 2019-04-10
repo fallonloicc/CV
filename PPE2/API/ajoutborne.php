@@ -19,7 +19,7 @@ include_once "utils.php";
         
         echo "Ajout réussi";
     }
-    if(isset($_GET['prix'])&& isset($_GET['libelle'])&& isset($_GET['adresseMac'])&& isset($_GET['adresseIp']))
+    if(isset($_GET['prix'])&& isset($_GET['libelle'])&& isset($_GET['adresseMac'])&& isset($_GET['adresseIp'])&& !isset($_GET['urlImage']))
     {
         $prix = $_GET['prix'];
         $libelle = $_GET['libelle'];
