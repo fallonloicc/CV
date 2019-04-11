@@ -43,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/API/ajoutClient.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
-              <caret line="39" column="189" selection-start-line="39" selection-start-column="189" selection-end-line="39" selection-end-column="189" />
+              <caret line="39" column="158" lean-forward="true" selection-start-line="39" selection-start-column="158" selection-end-line="39" selection-end-column="158" />
             </state>
           </provider>
         </entry>
@@ -164,12 +164,12 @@
       <updated>1554915522072</updated>
       <workItem from="1554915523677" duration="3515000" />
       <workItem from="1554965326789" duration="596000" />
-      <workItem from="1554983904265" duration="3924000" />
+      <workItem from="1554983904265" duration="4108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8035000" />
+    <option name="totallyTimeSpent" value="8219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -250,7 +250,7 @@
     <entry file="file://$PROJECT_DIR$/API/ajoutClient.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
-          <caret line="39" column="189" selection-start-line="39" selection-start-column="189" selection-end-line="39" selection-end-column="189" />
+          <caret line="39" column="158" lean-forward="true" selection-start-line="39" selection-start-column="158" selection-end-line="39" selection-end-column="158" />
         </state>
       </provider>
     </entry>
