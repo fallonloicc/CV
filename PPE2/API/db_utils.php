@@ -28,6 +28,13 @@ function getAllBornes()
     return $statement->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function getAllClients()
+{
+    $statement = getPdo()->prepare("SELECT * FROM clients");
+    $statement->execute();
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
+}
+
 function getUserInfoById($id)
 {
     $statement = getPdo()->prepare("SELECT * FROM users where id = :id");
