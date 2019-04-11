@@ -16,7 +16,7 @@
         $passwd = $_GET['passwd'];
         
     
-        $req ='INSERT INTO clients (nom, prenom, email, tel, cp, ville, adresse, siret, passwd) VALUES ("'.$nom.'","'.$prenom.'", "'.$email.'", "'.$tel.'", "'.$cp.'",, "'.$ville.'", "'.$siret.'", "'.$passwd.'")';
+        $req ='INSERT INTO clients (nom, prenom, email, tel, cp, ville, adresse, siret, passwd) VALUES ("'.$nom.'","'.$prenom.'", "'.$email.'", "'.$tel.'", "'.$cp.'",, "'.$ville.'","'.$adresse.'", "'.$siret.'", "'.$passwd.'")';
         
         $statement = getPdo()->prepare($req);
         $statement->execute();
@@ -37,7 +37,7 @@
         $passwd = $_GET['passwd'];
     
     
-        $req ='INSERT INTO clients (nom, prenom, email, tel, cp, ville, adresse, passwd) VALUES ("'.$nom.'","'.$prenom.'", "'.$email.'", "'.$tel.'", "'.$cp.'",, "'.$ville.'", "'.$passwd.'")';
+        $req ='INSERT INTO clients (nom, prenom, email, tel, cp, ville, adresse, passwd) VALUES ("'.$nom.'","'.$prenom.'", "'.$email.'", "'.$tel.'", "'.$cp.'",, "'.$ville.'","'.$adresse.'", "'.$passwd.'")';
     
         $statement = getPdo()->prepare($req);
         $statement->execute();
