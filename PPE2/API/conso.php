@@ -1,28 +1,11 @@
 <?php
     
-    include('db.php');
+    include_once "db.php";
+    include_once "db_utils.php";
     
-    $req = 'SELECT validation FROM clients';
-    $oui = $bdd->query($req);
-    while($requete = $oui->fetch())
-    {
-        if (!isset($requete->validation))
-        {
-        
-        }
-    }
-    
-    
-    $req ='SELECT * FROM consommables';
-    $oui = $bdd->query($req);
-    $conso = array();
-    
-    while($requete = $oui->fetch())
-    {
-        $newborne= array("Libelle:"=> $requete->libelle,"Prix:" =>$requete->prix."€");
-        array_push($conso, $newborne);
-    }
     
     header('Content-type: application/json');
+    $results = getAllConso();
+    $json = json_encode($results);
     
-    echo json_encode($conso);
+    echo $json;

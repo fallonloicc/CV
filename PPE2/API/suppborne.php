@@ -6,7 +6,7 @@
     {
         $idB = $_GET['idBorne'];
         
-        $req ='DELETE FROM bornes WHERE idBornes = '.$idB.'';
+        $req ='DELETE FROM bornes WHERE idBornes = '.$idB.';';
         
         $statement = getPdo()->prepare($req);
         $statement->execute();

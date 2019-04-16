@@ -35,6 +35,13 @@ function getAllClients()
     return $statement->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function getAllConso()
+{
+    $statement = getPdo()->prepare("SELECT * FROM consommables");
+    $statement->execute();
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
+}
+
 function getUserInfoById($id)
 {
     $statement = getPdo()->prepare("SELECT * FROM users where id = :id");
