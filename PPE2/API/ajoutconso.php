@@ -1,16 +1,25 @@
 <?php
-include_once "db.php";
-include_once "utils.php";
+    include_once "db.php";
+    include_once "utils.php";
     
     
-    if(isset($_POST['prix'])&& isset($_POST['libelle'])&& isset($_POST['stock'])&& isset($_POST['description']))
+    if(isset($_GET['prix'])&& isset($_GET['libelle'])&& isset($_GET['stock']))
     {
-        $prix = $_POST['prix'];
-        $libelle = $_POST['libelle'];
-        $stock = $_POST['stock'];
-        $desc = $_POST['description'];
+        $prix = $_GET['prix'];
+        $libelle = $_GET['libelle'];
+        $stock = $_GET['stock'];
+        $desc = $_GET['desc'];
         
-        $req ='INSERT INTO consommables (prix, libelle, stock, description) VALUES ("'.$prix.'","'.$libelle.'", "'.$stock.'", "'.$desc.'")';
-        $oui = $bdd->query($req);
+        $req ='INSERT INTO consommables (libelle, stock, description, prix) VALUES ("'.$libelle.'","'.$stock.'", "", "'.$prix.'")';
         
+        $statement = getPdo()->prepare($req);
+        $statement->execute();
+        
+        
+        echo "Ajout réussi";
+        exit();
+    }
+    else
+    {
+        echo "Raté chef !";
     }

@@ -1,11 +1,21 @@
 <?php
-    include('db.php');
     
-    if (isset($_POST['idConsommables']))
+    require_once'db.php';
+    
+    if (isset($_GET['idConso']))
     {
-        $idC = $_POST['idConsommables'];
+        $idB = $_GET['idConso'];
         
-        $req ='DELETE FROM consommables WHERE "idConsosommables" = "'.$idB.'" ';
-        $oui = $bdd->query($req);
+        $req ='DELETE FROM consommables WHERE idConsosommables = '.$idB.';';
+        
+        $statement = getPdo()->prepare($req);
+        $statement->execute();
+        
+        echo "Bien vu l'aveugle !";
+        
+    }
+    else
+    {
+        echo "Ratééééééééééééééééé !";
     }
     
