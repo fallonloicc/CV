@@ -59,7 +59,7 @@ function getPhotosByCode($code)
     SELECT idPhotos, estAime, chemin, date FROM photos p
     INNER JOIN borne_photo AS b ON p.idPhotos = b.idPhotos
     INNER JOIN commande AS c ON c.idCommande = b.idCommande
-    where r.code_evenement = :code
+    where b.idCommande = :code
 EOD;
 
     $statement = getPdo()->prepare($req);
