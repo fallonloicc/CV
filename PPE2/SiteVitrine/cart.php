@@ -109,27 +109,18 @@
 						echo '<th class="column-1"></th>';
 						echo "</tr>";
 					}
-
 					echo "</table>";
 					echo "</div>";
 					echo "</div>";
-					echo "<input type=\"submit\" class='flex-c-m bg1 bo-rad-23 hov1 s-text1 trans-0-4' style='padding: 0 58px 0 58px;  margin: 2% 0 1% 0;' value=\"Rafraichir\"/>";
-					echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
-					echo "<a href='product.php'><input type='button' class='flex-c-m bg1 bo-rad-23 hov1 s-text1 trans-0-4' style=' padding: 0 15px 0 15px;' value='Revenir à vos achats'></a>";
+					echo "<a href='product.php'><input type='button' class='flex-c-m bg1 bo-rad-23 hov1 s-text1 trans-0-4' style='padding: 0 15px 0 15px; margin: 5% 0 0 0;' value='Revenir à vos achats'></a>";
 					echo '<div class="bo9 w-size18 p-l-40 p-r-40 p-t-30 p-b-38 m-t-30 m-r-0 m-l-auto p-lr-15-sm">';
 					echo '<div class="flex-w flex-sb-m p-t-26 p-b-30">';
-					echo "<label for='event-select'><b>Choisir l'évènement prévu :</b></label><select id='event-select'>";
-					$req ='SELECT * FROM evenement';
-					$oui = $bdd->query($req);
-
-					while($requete = $oui->fetch())
-					{ 
-						echo "<option value='".$requete->libelle."'>".$requete->libelle."</option>";
-					}
-
-					echo "</select>";
+					echo '<span class="m-text22 w-size19 w-full-sm"> Total : </span>';
+					echo "<span class='m-text22 w-size19 w-full-sm'>".MontantGlobal()." €</span>";
 
 					echo "<tr><td colspan=\"4\">";
+					echo "<input type=\"submit\" class='flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4' value=\"Rafraichir\"/>";
+					echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
 
 					echo "</td></tr></br>";
 					echo '<span class="m-text22 w-size19 w-full-sm"> Total : </span>';
