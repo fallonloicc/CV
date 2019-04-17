@@ -44,7 +44,7 @@ function getAllConso()
 
 function getUserInfoById($id)
 {
-    $statement = getPdo()->prepare("SELECT * FROM users where id = :id");
+    $statement = getPdo()->prepare("SELECT * FROM clients where idClient = :id");
     $statement->execute(array(":id" => $id));
     $results = $statement->fetchAll(PDO::FETCH_ASSOC);
     if (count($results) == 1) {
@@ -96,7 +96,7 @@ function toggleLikeForPhoto($id_photo)
     $req = <<<EOD
 UPDATE photos
 SET estAime = :isLiked
-WHERE id = :id
+WHERE idPhotos = :id
 EOD;
 
     $statement = getPdo()->prepare($req);
