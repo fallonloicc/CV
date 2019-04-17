@@ -56,7 +56,7 @@ function getUserInfoById($id)
 function getPhotosByCode($code)
 {
     $req = <<<EOD
-    SELECT idPhotos, estAime, chemin, date FROM photos p
+    SELECT p.idPhotos, estAime, chemin, date FROM photos p
     INNER JOIN borne_photo AS b ON p.idPhotos = b.idPhotos
     INNER JOIN commande AS c ON c.idCommande = b.idCommande
     where b.idCommande = :code
