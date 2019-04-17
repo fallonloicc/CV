@@ -117,16 +117,6 @@
 					echo '<div class="flex-w flex-sb-m p-t-26 p-b-30">';
 					echo '<span class="m-text22 w-size19 w-full-sm"> Total : </span>';
 					echo "<span class='m-text22 w-size19 w-full-sm'>".MontantGlobal()." €</span>";
-					echo "<label for='event-select'><b>Choisir l'évènement prévu :</b></label><select id='event-select'>";
-					$req ='SELECT * FROM evenement';
-					$oui = $bdd->query($req);
-
-					while($requete = $oui->fetch())
-					{ 
-						echo "<option value='".$requete->libelle."'>".$requete->libelle."</option>";
-					}
-
-					echo "</select>";
 					echo "<tr><td colspan=\"4\">";
 					echo "<input type=\"submit\" class='flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4' value=\"Rafraichir\"/>";
 					echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
