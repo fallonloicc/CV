@@ -352,9 +352,4 @@ onAuthorize: function (data, actions) {
 }, '#paypal-button-container');
 </script>
 </body>
-<<<<<<< HEAD
 
-</html>
-=======
-</html>
->>>>>>> 1b39822b52d6acb4164268502949a3f6ca3ef78b
