@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab2a92c2-bb99-4e7a-ae51-e45db2ca4b71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SiteVitrine/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/SiteVitrine/cart.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +44,9 @@
         <entry file="file://$PROJECT_DIR$/SiteVitrine/cart.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="742">
-              <caret line="354" selection-start-line="354" selection-end-line="354" />
+              <caret line="390" column="36" selection-start-line="390" selection-start-column="36" selection-end-line="390" selection-end-column="36" />
               <folding>
+                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
@@ -52,6 +54,13 @@
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SiteVitrine/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2346" />
           </provider>
         </entry>
       </file>
@@ -96,15 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="15" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="10" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiteVitrine/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -165,6 +165,12 @@
               <item name="PPE2" type="b2602c69:ProjectViewProjectNode" />
               <item name="PPE2" type="462c0819:PsiDirectoryNode" />
               <item name="SiteVitrine" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiteVitrine" type="462c0819:PsiDirectoryNode" />
               <item name="panier" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -206,12 +212,12 @@
       <workItem from="1554965326789" duration="596000" />
       <workItem from="1554983904265" duration="8712000" />
       <workItem from="1555073165367" duration="484000" />
-      <workItem from="1555397248779" duration="4675000" />
+      <workItem from="1555397248779" duration="5715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17982000" />
+    <option name="totallyTimeSpent" value="19022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -360,11 +366,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SiteVitrine/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2346" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SiteVitrine/cart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
-          <caret line="354" selection-start-line="354" selection-end-line="354" />
+          <caret line="390" column="36" selection-start-line="390" selection-start-column="36" selection-end-line="390" selection-end-column="36" />
           <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />

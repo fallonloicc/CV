@@ -388,4 +388,5 @@ onAuthorize: function (data, actions) {
 	});
 </script>
 </body>
+    <?php include_once 'footer.php'; ?>
 </html>
