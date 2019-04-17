@@ -72,7 +72,7 @@ function getIsPhotoLikedById($id_photo)
     $req = <<<NANI
 SELECT estAime
 FROM photos
-WHERE id = :id
+WHERE idPhotos = :id
 NANI;
 
     $statement = getPdo()->prepare($req);
