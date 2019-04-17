@@ -1,11 +1,11 @@
 	<?php
 	session_start();
 	?>
-<!DOCTYPE html>
-<html lang="fr">
-<?php
+	<!DOCTYPE html>
+	<html lang="fr">
+	<?php
 	include('header.php');
-?>
+	?>
 	<!-- Title Page -->
 	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
 		<h2 class="l-text2 t-center">
@@ -117,14 +117,21 @@
 					echo '<div class="flex-w flex-sb-m p-t-26 p-b-30">';
 					echo '<span class="m-text22 w-size19 w-full-sm"> Total : </span>';
 					echo "<span class='m-text22 w-size19 w-full-sm'>".MontantGlobal()." €</span>";
+					echo "<label for='event-select'><b>Choisir l'évènement prévu :</b></label><select id='event-select'>";
+					$req ='SELECT * FROM evenement';
+					$oui = $bdd->query($req);
 
+					while($requete = $oui->fetch())
+					{ 
+						echo "<option value='".$requete->libelle."'>".$requete->libelle."</option>";
+					}
+
+					echo "</select>";
 					echo "<tr><td colspan=\"4\">";
 					echo "<input type=\"submit\" class='flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4' value=\"Rafraichir\"/>";
 					echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
 
 					echo "</td></tr></br>";
-					echo '<span class="m-text22 w-size19 w-full-sm"> Total : </span>';
-					echo "<span class='m-text22 w-size19 w-full-sm' id='total'>".MontantGlobal()." €</span>";
 					echo"<div style='margin: 10% 25% 0 25% ;' id='paypal-button-container'></div>";
 				}
 				echo "</table>";
@@ -312,6 +319,75 @@
 </script>
 <!--===============================================================================================-->
 <script src="js/main.js"></script>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+// Render the PayPal button
+paypal.Button.render({
+// Set your environment
+env: 'sandbox', // sandbox | production
+
+// Specify the style of the button
+style: {
+  layout: 'vertical',  // horizontal | vertical
+  size:   'responsive',    // medium | large | responsive
+  shape:  'rect',      // pill | rect
+  color:  'gold'       // gold | blue | silver | white | black
+},
+
+// Specify allowed and disallowed funding sources
+//
+// Options:
+// - paypal.FUNDING.CARD
+// - paypal.FUNDING.CREDIT
+// - paypal.FUNDING.ELV
+funding: {
+	allowed: [
+	paypal.FUNDING.CARD,
+	paypal.FUNDING.CREDIT
+	],
+	disallowed: []
+},
+
+// Enable Pay Now checkout flow (optional)
+commit: true,
+
+// PayPal Client IDs - replace with your own
+// Create a PayPal app: https://developer.paypal.com/developer/applications/create
+client: {
+	sandbox: 'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+	production: '<insert production client id>'
+},
+
+payment: function (data, actions) {
+	return actions.payment.create({
+		payment: {
+			transactions: [
+			{
+				amount: {
+					total: '<?php echo MontantGlobal(); ?>',
+					currency: 'EUR'
+				}
+			}
+			]
+		}
+	});
+},
+
+onAuthorize: function (data, actions) {
+	return actions.payment.execute()
+	.then(function () {
+		window.alert('Payment Complete!');
+	});
+}
+}, '#paypal-button-container');
+</script>
+<script type="text/javascript">
+	$("#paypal-button-container").click( function(){
+		<?php
+		$req = "INSERT INTO "
+		?>
+	});
+</script>
 
 </body>
 </html>
