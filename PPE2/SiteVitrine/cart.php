@@ -380,13 +380,6 @@ onAuthorize: function (data, actions) {
 }
 }, '#paypal-button-container');
 </script>
-<script type="text/javascript">
-	$("#paypal-button-container").click( function(){
-		<?php
-		$req = "INSERT INTO "
-		?>
-	});
-</script>
+
 </body>
-    <?php include_once 'footer.php'; ?>
 </html>
