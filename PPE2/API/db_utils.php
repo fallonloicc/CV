@@ -103,3 +103,22 @@ EOD;
     $statement->execute(array(":isLiked" => $isLiked, ":id" => $id_photo));
     return $isLiked;
 }
+
+function getAllCommande()
+{
+    $req = <<<NANI
+SELECT co.idCommande, co.dateCommande, co.codeEvent, cl.idClient, cl.nom, cl.prenom, bo.idBornes, bo.prix, bo.libelle
+FROM commande co
+JOIN commande_client c_b ON co.idCommande = c_b.idCommande
+JOIN clients cl ON c_b.idClient = cl.idClient
+JOIN bornes_commandes b_c ON b_c.idCommande = co.idCommande
+JOIN bornes bo ON b_c.idBornes = bo.idBornes
+JOIN consommable_commande c_c ON c_c.idCommande = co.idCommande
+JOIN consommables con ON con.idConsosommables = c_c.idConsommables
+NANI;
+    
+    $statement = getPdo()->prepare($req);
+    $statement->execute();
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
+    
+}
