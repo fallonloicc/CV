@@ -107,7 +107,7 @@ EOD;
 function getAllCommandeById($idCommande)
 {
     $req = <<<NANI
-SELECT co.idCommande, co.dateCommande, co.codeEvent, cl.idClient, cl.nom, cl.prenom, bo.idBornes, bo.prix, bo.libelle
+SELECT co.idCommande, co.dateCommande,co.debutDate, co.finDate, co.codeEvent, cl.idClient, cl.nom, cl.prenom, bo.idBornes, bo.prix, bo.libelle
 FROM commande co
 JOIN commande_client c_b ON co.idCommande = c_b.idCommande
 JOIN clients cl ON c_b.idClient = cl.idClient
