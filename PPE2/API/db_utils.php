@@ -130,4 +130,8 @@ function getAllCommande()
 SELECT idCommande, dateCommande, codeEvent
 FROM commande
 NANI;
+    
+    $statement = getPdo()->prepare($req);
+    $statement->execute();
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
 }
