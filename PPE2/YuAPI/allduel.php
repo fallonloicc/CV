@@ -1,6 +1,12 @@
 <?php
     include_once "db.php";
-    include_once "db_utils.php";
+    
+    function getAllDuel()
+    {
+        $statement = getPdo()->prepare("SELECT * FROM duel");
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
     
     
     header('Content-type: application/json');
