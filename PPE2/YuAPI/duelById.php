@@ -3,10 +3,10 @@
     
     function getDuelByCode($code)
     {
-        $req = 'SELECT * FROM duel WHERE player1 ==":code" OR player2 ==":code"';
+        $req = 'SELECT * FROM duel WHERE player1 =="'.$code.'" OR player2 =="'.$code.'"';
 
          $statement = getPdo()->prepare($req);
-         $statement->execute(array(":code" => $code));
+         $statement->execute();
          return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
     
