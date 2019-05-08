@@ -13,7 +13,7 @@
     if (isset($_GET['codeJoueur']))
     {
         header('Content-type: application/json');
-        $results = getDuelById($_GET['codeJoueur']);
+        $results = getDuelByCode($_GET['codeJoueur']);
         $json = json_encode($results);
     }
     
