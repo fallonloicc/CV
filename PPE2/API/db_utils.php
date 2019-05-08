@@ -117,11 +117,11 @@ JOIN consommable_commande c_c ON c_c.idCommande = co.idCommande
 JOIN consommables con ON con.idConsosommables = c_c.idConsommables
 WHERE co.idCommande = :id
 NANI;
-    
+
     $statement = getPdo()->prepare($req);
     $statement->execute(array(":id" => $idCommande));
     return $statement->fetchAll(PDO::FETCH_ASSOC);
-    
+
 }
 
 function getAllCommande()
@@ -130,7 +130,7 @@ function getAllCommande()
 SELECT idCommande, dateCommande, codeEvent
 FROM commande
 NANI;
-    
+
     $statement = getPdo()->prepare($req);
     $statement->execute();
     return $statement->fetchAll(PDO::FETCH_ASSOC);
