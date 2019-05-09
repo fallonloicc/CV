@@ -4,7 +4,9 @@
     
     function add($player1, $player2, $winner)
     {
-        $req = 'INSERT INTO duel(player1, player2, vainqueur) VALUES ("'.$player1.'", "'.$player2.'", "'.$winner.'")';
+        $date = date('Y-m-d');
+        
+        $req = 'INSERT INTO duel(player1, player2, vainqueur, date) VALUES ("'.$player1.'", "'.$player2.'", "'.$winner.'")';
     
         $statement = getPdo()->prepare($req);
         $statement->execute();
@@ -17,5 +19,6 @@
         $results = add($_GET['p1'], $_GET['p2'], $_GET['win']);
         $json = json_encode($results);
     }
-    
+    $date = date('Y-m-d');
+    echo $date;
     echo $json;
