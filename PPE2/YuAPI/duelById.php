@@ -13,18 +13,17 @@
     
     if (isset($_GET['codeJoueur']))
     {
+        header('Content-type: application/json');
         if ($_GET['codeJoueur'] == "all")
         {
-            header('Content-type: application/json');
             $results = getAllDuel();
-            $json = json_encode($results);
         }
         else
         {
-            header('Content-type: application/json');
             $results = getDuelByCode($_GET['codeJoueur']);
-            $json = json_encode($results);
         }
+    
+        $json = json_encode($results);
         
     }
     
