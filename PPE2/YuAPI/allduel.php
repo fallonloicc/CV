@@ -3,7 +3,7 @@
     
     function getAllDuel()
     {
-        $statement = getPdo()->prepare("SELECT * FROM duel ORDER BY date ASC");
+        $statement = getPdo()->prepare("SELECT * FROM duel ORDER BY date DESC");
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_ASSOC);
     }
