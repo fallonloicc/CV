@@ -4,7 +4,7 @@
     
     function getDuelByCode($code)
     {
-        $req = 'SELECT * FROM duel WHERE player1 ="'.$code.'" OR player2 ="'.$code.'"';
+        $req = 'SELECT * FROM duel WHERE player1 ="'.$code.'" OR player2 ="'.$code.'" ORDER BY date ASC';
 
          $statement = getPdo()->prepare($req);
          $statement->execute();
