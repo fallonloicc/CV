@@ -12,7 +12,12 @@
 
 <br><br><p><b>Articles :</b></p><br>
 <iframe src="//www.pearltrees.com/fallonloic/flutter/id23714125?embed=2&d=201901231038" width="560" height="413" style="border:0px;" allowtransparency="true"></iframe><span style="display:block; padding-top:2px; color:#818181; font-size:13px;"><a href="http://www.pearltrees.com/fallonloic/flutter/id23714125" style=" color:#818181; font-size:13px;" target="_blank">Flutter</a>, par <a href="http://www.pearltrees.com/fallonloic" style=" color:#818181; font-size:13px;" target="_blank">Loïc Fallon</a></span>
-<br>
+
+<br><br><p><b>Résumé :</b></p><br>
+<p>Flutter, framework développé par Google ne cesse de faire parler de lui depuis son arrivé sur le marché. Celui s'impose comme l'un des languages novateur dans le domaine du développement mobile.
+Celui ci permet de concevoir des applications mobiles cross plateforme, c'est à dire des applications Android et IOS.</p>
+
+
 <img src="img/fleche.png" id="scrolltop" style="cursor: pointer; float: right;" width="50px">
 
 <script>
