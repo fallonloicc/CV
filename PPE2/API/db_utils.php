@@ -8,6 +8,7 @@ require_once "db.php";
  * @param [string] $token
  * @return l'identifiant de l'utilisateur ou false
  */
+
 function findUserIdByToken($token)
 {
     $pdo = getPdo();
@@ -134,4 +135,12 @@ NANI;
     $statement = getPdo()->prepare($req);
     $statement->execute();
     return $statement->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getDispoByDate($date1, $date2)
+{
+    $req = "SELECT b.idBornes, b.libelle, c.idCommande FROM bornes AS b
+    JOIN bornes_commandes AS bc ON b.idBornes = bc.idBornes
+    JOIN commande AS c ON bc.idCommande = c.idCommande
+    WHERE debutdate BETWEEN '".$date1."' AND '".$date2."';";
 }
