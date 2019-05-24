@@ -40,20 +40,20 @@ include('header.php');
 
                 <?php
 
-                    include('params/db.php');
+                include('params/db.php');
 
-                    $req ='SELECT * FROM clients WHERE email ="'.$_SESSION["email"].'"';
-                    $oui = $bdd->query($req);
+                $req ='SELECT * FROM clients WHERE email ="'.$_SESSION["email"].'"';
+                $oui = $bdd->query($req);
 
-                    while($requete = $oui->fetch())
-                    {
-                        echo "<p class=\'p-b-28\'><u>Prénom :</u> ".$requete->prenom."</p></br>
-                              <p class=\'p-b-28\'><u>Nom :</u> ".$requete->nom."</p></br>
-                              <p class=\'p-b-28\'><u>Tel :</u> ".$requete->tel."</p></br>
-                              <p class=\'p-b-28\'><u>Adresse :</u> ".$requete->adresse."</p></br>
-                              <p class=\'p-b-28\'><u>Ville :</u> ".$requete->ville."</p></br>
-                              <p class=\'p-b-28\'><u>Code postal :</u> ".$requete->cp."</p></br>";
-                    }
+                while($requete = $oui->fetch())
+                {
+                    echo "<p class=\'p-b-28\'><u>Prénom :</u> ".$requete->prenom."</p></br>
+                    <p class=\'p-b-28\'><u>Nom :</u> ".$requete->nom."</p></br>
+                    <p class=\'p-b-28\'><u>Tel :</u> ".$requete->tel."</p></br>
+                    <p class=\'p-b-28\'><u>Adresse :</u> ".$requete->adresse."</p></br>
+                    <p class=\'p-b-28\'><u>Ville :</u> ".$requete->ville."</p></br>
+                    <p class=\'p-b-28\'><u>Code postal :</u> ".$requete->cp."</p></br>";
+                }
 
                 ?>
 
@@ -62,23 +62,37 @@ include('header.php');
                 <h3 class="m-text26 p-t-15 p-b-16">
                     Vos commandes :
                 </h3>
+                    <?php 
+                    include('params/db.php');
+                    $reqq = 'SELECT * FROM commande AS c 
+                    JOIN commande_client AS cc ON c.idCommande = cc.idCommande 
+                    JOIN clients as cl ON cc.idClient = cl.idClient 
+                    WHERE cl.idClient ="'.$_SESSION["id"].'"';
 
-                <p class=\'p-b-28\'>Vous n'avez aucunes commandes !</p></br>
+                    $non = $bdd->query($reqq);
+                    while($reqq = $non->fetch())
+                    {
+                        echo "
+                        <span class=\'p-b-28\'><u>Date de la commande :</u> ".$reqq->dateCommande."</span>
+                        <span class=\'p-b-28\'><u>Début de l'emprunt :</u> ".$reqq->debutDate."</span></br>
+                        <span class=\'p-b-28\'><u>Fin de l'emprunt :</u> ".$reqq->finDate."</span>
+                        <span class=\'p-b-28\'><u>Code Event :</u> ".$reqq->codeEvent."</span></br>";
+                    }
+                    ?>
+                </div>
+
 
             </div>
-
-
         </div>
-    </div>
-</section>
+    </section>
 
-<?php include('footer.php') ?>
+    <?php include('footer.php') ?>
 
-<!-- Back to top -->
-<div class="btn-back-to-top bg0-hov" id="myBtn">
-			<span class="symbol-btn-back-to-top">
-				<i class="fa fa-angle-double-up" aria-hidden="true"></i>
-			</span>
+    <!-- Back to top -->
+    <div class="btn-back-to-top bg0-hov" id="myBtn">
+       <span class="symbol-btn-back-to-top">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </span>
 </div>
 
 <!-- Container Selection -->
