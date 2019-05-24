@@ -103,7 +103,7 @@
 						echo "<tr class='table-row'>";
 						echo "<td class='column-1'></td>";
 						echo "<td class='column-2'>".htmlspecialchars($_SESSION['panier']['libelleProduit'][$i])."</td>";
-						echo "<td class='column-3'><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\"/></td>";
+						echo "<td class='column-3'><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\" readonly/></td>";
 						echo "<td class='column-4'>".htmlspecialchars($_SESSION['panier']['prixProduit'][$i])."</td>";
 						echo "<td class='column-5'><a href=\"".htmlspecialchars("cart.php?action=suppression&l=".rawurlencode($_SESSION['panier']['libelleProduit'][$i]))."\"><i class='fa fa-times'></i></a></td>";
 						echo '<th class="column-1"></th>';
@@ -117,12 +117,10 @@
 					echo '<div class="flex-w flex-sb-m p-t-26 p-b-30">';
 					echo '<span class="m-text22 w-size19 w-full-sm"> Total : </span>';
 					echo "<span class='m-text22 w-size19 w-full-sm'>".MontantGlobal()." €</span>";
-					echo "<tr><td colspan=\"4\">";
+					echo "<b>Du ".$_GET['date1']." au ".$_GET['date2']."</b>";
 
 					echo "</td></tr></br>";
-					echo"<div style='margin: 10% 25% 0 25% ;' id='paypal-button-container'></div>";
-					echo "<input type=\"submit\" class='flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4' value=\"Rafraichir\"/>";
-					echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
+					echo"<div style='margin: 10% 25% 0 25% ;' id='paypal-button-container'></div>";				
 				}
 				echo "</table>";
 				echo "</div>";
