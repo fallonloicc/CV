@@ -494,6 +494,7 @@
 			var go = "cart.php?action=ajout&l=<?php echo $requete->libelle ?>&q="+ qte +"&p=<?php echo $requete->prix ?>"
 			document.location.href= go;
 		});
+  
 	</script>
 </body>
 </html>

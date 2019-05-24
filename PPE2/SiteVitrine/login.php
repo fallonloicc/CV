@@ -18,7 +18,7 @@ if(isset($_POST['user'])&& isset($_POST['passwd'])){
 				$_SESSION['email'] = $usr->email ;
 				$_SESSION['nom'] =$usr->nom ;
 				$_SESSION['prenom'] = $usr->prenom;
-				$_SESSION['id']= $usr->id;
+				$_SESSION['id']= $usr->idClient;
 				
 			}
 			else

@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab2a92c2-bb99-4e7a-ae51-e45db2ca4b71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API/dispoBorne.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/db_utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/API/db_utils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SiteVitrine/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/SiteVitrine/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SiteVitrine/params/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/SiteVitrine/params/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SiteVitrine/product-detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/SiteVitrine/product-detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SiteVitrine/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/SiteVitrine/product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,51 +16,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YuAPI/db.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API/utils.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API/db_utils.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="762">
-              <caret line="144" column="58" lean-forward="true" selection-start-line="141" selection-start-column="12" selection-end-line="144" selection-end-column="58" />
+              <caret line="144" column="58" selection-start-line="141" selection-start-column="12" selection-end-line="144" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SiteVitrine/params/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YuAPI/duelById.php">
+        <entry file="file://$PROJECT_DIR$/SiteVitrine/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="104" selection-start-line="6" selection-start-column="104" selection-end-line="6" selection-end-column="104" />
+            <state relative-caret-position="340">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YuAPI/addDuem.php">
+        <entry file="file://$PROJECT_DIR$/SiteVitrine/product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API/ajoutborne.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="657">
+              <caret line="131" column="175" selection-start-line="131" selection-start-column="175" selection-end-line="131" selection-end-column="175" />
             </state>
           </provider>
         </entry>
@@ -69,24 +56,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="33" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API/db.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API/AllCommande.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="15" lean-forward="true" selection-start-column="1" selection-end-line="9" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -121,6 +90,10 @@
         <option value="$PROJECT_DIR$/YuAPI/allduel.php" />
         <option value="$PROJECT_DIR$/API/dispoBorne.php" />
         <option value="$PROJECT_DIR$/API/db_utils.php" />
+        <option value="$PROJECT_DIR$/SiteVitrine/login.php" />
+        <option value="$PROJECT_DIR$/SiteVitrine/product-detail.php" />
+        <option value="$PROJECT_DIR$/SiteVitrine/product.php" />
+        <option value="$PROJECT_DIR$/SiteVitrine/params/db.php" />
       </list>
     </option>
   </component>
@@ -147,6 +120,17 @@
               <item name="PPE2" type="b2602c69:ProjectViewProjectNode" />
               <item name="PPE2" type="462c0819:PsiDirectoryNode" />
               <item name="API" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiteVitrine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PPE2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PPE2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiteVitrine" type="462c0819:PsiDirectoryNode" />
+              <item name="params" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,12 +187,12 @@
       <workItem from="1557329506446" duration="2381000" />
       <workItem from="1557384401207" duration="188000" />
       <workItem from="1557472890064" duration="2055000" />
-      <workItem from="1558681613817" duration="1745000" />
+      <workItem from="1558681613817" duration="11368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52394000" />
+    <option name="totallyTimeSpent" value="62017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -251,13 +235,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteVitrine/index.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SiteVitrine/product-detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8483">
-          <caret line="499" selection-start-line="403" selection-start-column="1" selection-end-line="499" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiteVitrine/inscription.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -385,20 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YuAPI/addDuem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/ajoutborne.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -420,6 +383,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SiteVitrine/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API/ajoutborne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YuAPI/addDuem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiteVitrine/product-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6721">
+          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API/dispoBorne.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -430,7 +421,21 @@
     <entry file="file://$PROJECT_DIR$/API/db_utils.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="762">
-          <caret line="144" column="58" lean-forward="true" selection-start-line="141" selection-start-column="12" selection-end-line="144" selection-end-column="58" />
+          <caret line="144" column="58" selection-start-line="141" selection-start-column="12" selection-end-line="144" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiteVitrine/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="131" column="175" selection-start-line="131" selection-start-column="175" selection-end-line="131" selection-end-column="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiteVitrine/params/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>

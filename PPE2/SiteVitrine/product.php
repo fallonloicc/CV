@@ -43,6 +43,31 @@ include('header.php');
 									Consommables
 								</a>
 							</li>
+                            <br>
+                            <li class="p-t-4">
+                                
+                                <label for="start" class="s-text13">Start date: </label>
+                                
+                                <?php
+                                
+                                    $date = date("Y-m-d", time());
+                                    
+                                    echo '<input class="s-text13" type="date" id="start" name="trip-start"
+                                       min="'.$date.'" max="2019-12-31">';
+                                    
+                                ?>
+
+                                <label for="end" class="s-text13">End date: </label>
+    
+                                <?php
+        
+                                    echo '<input class="s-text13" type="date" id="end" name="trip-end"
+                                       min="'.$date.'" max="2019-12-31">';
+    
+                                ?>
+                                
+                                <button class="s-text13" id="btnverif">Valider</button>
+                            </li>
 						</ul>
 
 						<div class="search-product pos-relative bo4 of-hidden">
@@ -64,9 +89,24 @@ include('header.php');
 							error_reporting(0);
 							include('params/db.php');
 							$conso = $_GET['conso'];
+							//$date1 = $_GET['date1'];
+							//$date2 = $_GET['date2'];
+                            
+                            $req = 'SELECT * FROM bornes';
 
-		            $req ='SELECT * FROM bornes';
-		            $oui = $bdd->query($req);
+                            if (isset($_GET['date1'])&& isset($_GET['date2']))
+                            {
+                                $date1 = $_GET['date1'];
+                                $date2 = $_GET['date2'];
+                                
+                                $req ='SELECT b.*, c.idCommande, c.debutDate, c.finDate FROM bornes AS b
+                                JOIN bornes_commandes AS bc ON b.idBornes = bc.idBornes
+                                JOIN commande AS c ON bc.idCommande = c.idCommande
+                                WHERE debutDate NOT BETWEEN "'.$date1.'" AND "'.$date2.'"
+                                ORDER BY b.idBornes ASC;';
+                            }
+                            
+                            $oui = $bdd->query($req);
 
 
 								if ($conso !=2)
@@ -89,7 +129,7 @@ include('header.php');
 
 																			<div class="block2-btn-addcart w-size1 trans-0-4">
 																				<!-- Button -->
-																				<a href="product-detail.php?id='.$requete->idBornes.'&type=1"><input type="button" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4" value="Description"></a>
+																				<a href="product-detail.php?id='.$requete->idBornes.'&type=1&date1='.$date1.'&date2='.$date2.'"><input type="button" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4" value="Description"></a>
 																			</div>
 																		</div>
 																	</div>
@@ -251,6 +291,19 @@ include('header.php');
 	</script>
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
+    
+    <script>
+        
+        $("#btnverif").click(function() {
+            var date1 = $("#start").val();
+            var date2 = $("#end").val();
+            
+            var go = "product.php?conso=1&date1="+date1+"&date2="+date2+"";
+            
+            document.location.href = go;
+        });
+        
+    </script>
 
 </body>
 </html>
