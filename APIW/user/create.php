@@ -28,6 +28,8 @@ if(
     !empty($data->password) &&
     !empty($data->adresse)
 ){
+
+    $date = date('m/d/Y h:i:s a', time());
  
     // set product property values
     $user->firstname = $data->firstname;
@@ -35,7 +37,7 @@ if(
     $user->email = $data->email;
     $user->password = $data->password;
     $user->adresse = $data->adresse;
-    $user->date_creation = date('Y-m-d H:i:s');
+    $user->date_creation = $date;
  
     // create the product
     if($user->create()){
