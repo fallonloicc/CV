@@ -8,7 +8,7 @@
         public $firstname;
         public $lastname;
         public $email;
-        public $password;
+        public $pwd;
         public $adresse;
         public $date_creation;
         public $current_token;
@@ -19,29 +19,30 @@
     
         //C
         public function create(){
-            $query = "INSERT INTO user SET firstname = :firstname, lastname = :lastname, email = :email, password = :password, adresse = :adresse, date_creation = :date_creation, current_token = :current_token";
+            $query = "INSERT INTO user SET firstname = :firstname, lastname = :lastname, email = :email, pwd = :pwd, 
+                adresse = :adresse, date_creation = :date_creation, current_token = :current_token";
+
             $stmt = $this->conn->prepare($query);
 
             $this->firstname = htmlspecialchars(strip_tags($this->firstname));
             $this->lastname = htmlspecialchars(strip_tags($this->lastname));
             $this->email = htmlspecialchars(strip_tags($this->email));
-            $this->password = htmlspecialchars(strip_tags($this->password));
+            $this->pwd = htmlspecialchars(strip_tags($this->pwd));
             $this->adresse = htmlspecialchars(strip_tags($this->adresse));
             $this->date_creation = htmlspecialchars(strip_tags($this->date_creation));
-
+            $this->current_token = htmlspecialchars(strip_tags($this->current_token));
             
             $stmt->bindParam(":firstname", $this->firstname);
             $stmt->bindParam(":lastname", $this->lastname);
             $stmt->bindParam(":email", $this->email);
-            $stmt->bindParam(":password", $this->password);
+            $stmt->bindParam(":password", $this->pwd);
             $stmt->bindParam(":adresse", $this->adresse);
             $stmt->bindParam(":date_creation", $this->date_creation);
-            $stmt->bindParam(":current_token", createToken());
+            $stmt->bindParam(":current_token", $this->current_token);
 
             if($stmt->execute()){
                 return true;
             }
-         
             return false;
 
         }
@@ -107,13 +108,13 @@
         function readOne(){
  
             // query to read single record
-            $query = "SELECT * FROM user WHERE current_token = ?";
+            $query = "SELECT * FROM user WHERE current_token =:current_token";
 
             // prepare query statement
             $stmt = $this->conn->prepare( $query );
          
             // bind id of product to be updated
-            $stmt->bindParam(1, $this->current_token);
+            $stmt->bindParam(":current_token", $this->current_token);
          
             // execute query
             $stmt->execute();
@@ -132,7 +133,7 @@
             $this->current_token = $row['current_token'];
         }
 
-        function createToken($email)
+        function createToken()
     {
         $token = bin2hex(random_bytes(32)); 
         return $token;

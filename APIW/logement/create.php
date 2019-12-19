@@ -10,44 +10,40 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 include_once '../dbclass.php';
  
 // instantiate product object
-include_once '../user.php';
+include_once '../logement.php';
  
 $database = new Database();
 $db = $database->getConnection();
  
-$user = new User($db);
+$logement = new Logement($db);
  
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
  
 // make sure data is not empty
 if(
-    !empty($data->firstname) &&
-    !empty($data->lastname) &&
-    !empty($data->email) &&
-    !empty($data->password) &&
-    !empty($data->adresse)
+    !empty($data->numero) &&
+    !empty($data->rue) &&
+    !empty($data->ville) &&
+    !empty($data->code_postal) &&
+    !empty($data->date_creation)
 ){
-
-    $date = date('Y-m-d', time());
  
     // set product property values
-    $user->firstname = $data->firstname;
-    $user->lastname = $data->lastname;
-    $user->email = $data->email;
-    $user->pwd = $data->password;
-    $user->adresse = $data->adresse;
-    $user->date_creation = $date;
-    $user->current_token = $user->createToken();
-    
+    $logement->numero = $data->numero;
+    $logement->rue = $data->rue;
+    $logement->ville = $data->ville;
+    $logement->code_postal = $data->code_postal;
+    $logement->date_creation = date('Y-m-d H:i:s');
+ 
     // create the product
-    if($user->create()){
-        
+    if($logement->create()){
+ 
         // set response code - 201 created
         http_response_code(201);
  
         // tell the user
-        echo json_encode(array("message" => "User was created."));
+        echo json_encode(array("message" => "Logement was created."));
     }
  
     // if unable to create the product, tell the user
@@ -57,7 +53,7 @@ if(
         http_response_code(503);
  
         // tell the user
-        echo json_encode(array("message" => "Unable to create user."));
+        echo json_encode(array("message" => "Unable to create logement."));
     }
 }
  
@@ -68,6 +64,6 @@ else{
     http_response_code(400);
  
     // tell the user
-    echo json_encode(array("message" => "Unable to create user. Data is incomplete."));
+    echo json_encode(array("message" => "Unable to create logement. Data is incomplete."));
 }
 ?>

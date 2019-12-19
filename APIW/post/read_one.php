@@ -8,45 +8,41 @@ header('Content-Type: application/json');
  
 // include database and object files
 include_once '../dbclass.php';
-include_once '../user.php';
+include_once '../post.php';
  
 // get database connection
 $database = new Database();
 $db = $database->getConnection();
  
 // prepare product object
-$user = new User($db);
+$post = new Post($db);
  
 // set ID property of record to read
-$user->current_token = isset($_GET['token']) ? $_GET['token'] : die();
+$post->id = isset($_GET['id']) ? $_GET['id'] : die();
  
 // read the details of product to be edited
-$user->readOne();
+$post->readOne();
  
-if($user->email!=null){
+if($post->id!=null){
     // create array
-    $user_arr = array(
-        "id" => $user->id,
-        "firstname" => $user->firstname,
-        "lastname" => $user->lastname,
-        "email" => $user->email,
-        "password" => $user->password,
-        "adresse" => $user->adresse,
-        "date creation" => $user->date_creation,
-        "current token" => $user->current_token
+    $post_arr = array(
+        "date_post" => $post->date_post,
+        "contenue" => $post->contenue
  
     );
+ 
     // set response code - 200 OK
     http_response_code(200);
  
     // make it json format
-    echo json_encode($user_arr);
+    echo json_encode($post_arr);
 }
+ 
 else{
     // set response code - 404 Not found
     http_response_code(404);
  
-    // tell the user product does not exist
-    echo json_encode(array("message" => "User does not exist."));
+    // tell the post product does not exist
+    echo json_encode(array("message" => "post does not exist."));
 }
 ?>

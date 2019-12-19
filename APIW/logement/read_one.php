@@ -8,45 +8,44 @@ header('Content-Type: application/json');
  
 // include database and object files
 include_once '../dbclass.php';
-include_once '../user.php';
+include_once '../logement.php';
  
 // get database connection
 $database = new Database();
 $db = $database->getConnection();
  
 // prepare product object
-$user = new User($db);
+$logement = new Logement($db);
  
 // set ID property of record to read
-$user->current_token = isset($_GET['token']) ? $_GET['token'] : die();
+$logement->id = isset($_GET['id']) ? $_GET['id'] : die();
  
 // read the details of product to be edited
-$user->readOne();
+$logement->readOne();
  
-if($user->email!=null){
+if($logement->numero!=null){
     // create array
-    $user_arr = array(
-        "id" => $user->id,
-        "firstname" => $user->firstname,
-        "lastname" => $user->lastname,
-        "email" => $user->email,
-        "password" => $user->password,
-        "adresse" => $user->adresse,
-        "date creation" => $user->date_creation,
-        "current token" => $user->current_token
+    $logement_arr = array(
+        "numero" => $logement->numero,
+        "rue" => $logement->rue,
+        "ville" => $logement->ville,
+        "code_postal" => $logement->code_postal,
+        "date creation" => $logement->date_creation
  
     );
+ 
     // set response code - 200 OK
     http_response_code(200);
  
     // make it json format
-    echo json_encode($user_arr);
+    echo json_encode($logement_arr);
 }
+ 
 else{
     // set response code - 404 Not found
     http_response_code(404);
  
-    // tell the user product does not exist
-    echo json_encode(array("message" => "User does not exist."));
+    // tell the logement product does not exist
+    echo json_encode(array("message" => "logement does not exist."));
 }
 ?>

@@ -10,44 +10,34 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 include_once '../dbclass.php';
  
 // instantiate product object
-include_once '../user.php';
+include_once '../post.php';
  
 $database = new Database();
 $db = $database->getConnection();
  
-$user = new User($db);
+$post = new Post($db);
  
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
  
 // make sure data is not empty
 if(
-    !empty($data->firstname) &&
-    !empty($data->lastname) &&
-    !empty($data->email) &&
-    !empty($data->password) &&
-    !empty($data->adresse)
+    !empty($data->date_post) &&
+    !empty($data->contenue)
 ){
-
-    $date = date('Y-m-d', time());
  
     // set product property values
-    $user->firstname = $data->firstname;
-    $user->lastname = $data->lastname;
-    $user->email = $data->email;
-    $user->pwd = $data->password;
-    $user->adresse = $data->adresse;
-    $user->date_creation = $date;
-    $user->current_token = $user->createToken();
-    
+    $post->date_post = $data->date('Y-m-d H:i:s');
+    $post->contenue = $data->contenue;
+ 
     // create the product
-    if($user->create()){
-        
+    if($post->create()){
+ 
         // set response code - 201 created
         http_response_code(201);
  
         // tell the user
-        echo json_encode(array("message" => "User was created."));
+        echo json_encode(array("message" => "post was created."));
     }
  
     // if unable to create the product, tell the user
@@ -57,7 +47,7 @@ if(
         http_response_code(503);
  
         // tell the user
-        echo json_encode(array("message" => "Unable to create user."));
+        echo json_encode(array("message" => "Unable to create post."));
     }
 }
  
@@ -68,6 +58,6 @@ else{
     http_response_code(400);
  
     // tell the user
-    echo json_encode(array("message" => "Unable to create user. Data is incomplete."));
+    echo json_encode(array("message" => "Unable to create post. Data is incomplete."));
 }
 ?>
