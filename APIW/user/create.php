@@ -39,6 +39,7 @@ if(
     $user->adresse = $data->adresse;
     $user->date_creation = $date;
     $user->current_token = $user->createToken();
+
     
     // create the product
     if($user->create()){

@@ -18,13 +18,13 @@
     $data = json_decode(file_get_contents("php://input"));
 
     // query to read single record
-    $query = "SELECT * FROM user WHERE email = ?";
+    $query = "SELECT * FROM user WHERE email = :email";
     
     // prepare query statement
     $stmt = $db->prepare( $query );
     
     // bind id of product to be updated
-    $stmt->bindParam(1, $data->email);
+    $stmt->bindParam(":email", $data->email);
     // execute query
     if($stmt->execute()){
         
@@ -36,13 +36,13 @@
         $user->firstname = $row['firstname'];
         $user->lastname = $row['lastname'];
         $user->email = $row['email'];
-        $user->password = $row['password'];
+        $user->pwd = $row['pwd'];
         $user->adresse = $row['adresse'];
         $user->date_creation = $row['date_creation'];
         $user->current_token = $row['current_token'];
 
 
-        if($user->password == $data->password){
+        if($user->pwd == $data->password){
             $token = createToken($user->email);
             $arr = array(
                 "token" => $token

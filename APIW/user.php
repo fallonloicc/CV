@@ -19,31 +19,23 @@
     
         //C
         public function create(){
-            $query = "INSERT INTO user SET firstname = :firstname, lastname = :lastname, email = :email, pwd = :pwd, 
-                adresse = :adresse, date_creation = :date_creation, current_token = :current_token";
+    
+            $query = "INSERT INTO user (firstname, lastname, email, pwd, adresse, date_creation) VALUES ('".$this->firstname."','".$this->lastname."','".$this->email."', '".$this->pwd."', '".$this->adresse."', '".$this->date_creation."')";
+            $stmt = $this->conn->prepare( $query );
 
-            $stmt = $this->conn->prepare($query);
-
-            $this->firstname = htmlspecialchars(strip_tags($this->firstname));
-            $this->lastname = htmlspecialchars(strip_tags($this->lastname));
-            $this->email = htmlspecialchars(strip_tags($this->email));
-            $this->pwd = htmlspecialchars(strip_tags($this->pwd));
-            $this->adresse = htmlspecialchars(strip_tags($this->adresse));
-            $this->date_creation = htmlspecialchars(strip_tags($this->date_creation));
-            $this->current_token = htmlspecialchars(strip_tags($this->current_token));
-            
             $stmt->bindParam(":firstname", $this->firstname);
             $stmt->bindParam(":lastname", $this->lastname);
             $stmt->bindParam(":email", $this->email);
             $stmt->bindParam(":password", $this->pwd);
             $stmt->bindParam(":adresse", $this->adresse);
             $stmt->bindParam(":date_creation", $this->date_creation);
-            $stmt->bindParam(":current_token", $this->current_token);
 
             if($stmt->execute()){
                 return true;
+            }else{
+                return false;
             }
-            return false;
+            
 
         }
         //R
@@ -78,9 +70,11 @@
 
             if($stmt->execute()){
                 return true;
+            }else{
+                return false;
             }
          
-            return false;
+            
         }
         //D
         public function delete(){
@@ -100,9 +94,11 @@
             // execute query
             if($stmt->execute()){
                 return true;
+            }else{
+                return false;
             }
         
-            return false;
+            
         }
 
         function readOne(){
