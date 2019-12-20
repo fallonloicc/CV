@@ -1,5 +1,4 @@
 <?php
-    // required headers
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Headers: access");
     header("Access-Control-Allow-Methods: GET");
@@ -22,9 +21,12 @@
     
     // prepare query statement
     $stmt = $db->prepare( $query );
+
+    $user->email = $data->email;
+    $user->email = htmlspecialchars(strip_tags($user->email));
     
     // bind id of product to be updated
-    $stmt->bindParam(":email", $data->email);
+    $stmt->bindParam(":email", $user->email);
     // execute query
     if($stmt->execute()){
         
