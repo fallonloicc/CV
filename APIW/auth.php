@@ -8,6 +8,7 @@
     include_once 'dbclass.php';
     include_once 'user.php';
 
+    //oui
     $database = new Database();
     $db = $database->getConnection();
 
