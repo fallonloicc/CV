@@ -15,14 +15,13 @@
     $user = new User($db);
 
     $data = json_decode(file_get_contents("php://input"));
-
+    echo $data ->email;
     // query to read single record
     $query = "SELECT * FROM user WHERE email = :email";
     
     // prepare query statement
     $stmt = $db->prepare( $query );
 
-    echo $data->email;
     $user->email = htmlspecialchars(strip_tags($user->email));
     $user->email = $data->email;
     
