@@ -23,12 +23,6 @@
             $query = "INSERT INTO user (firstname, lastname, email, pwd, adresse, date_creation) VALUES ('".$this->firstname."','".$this->lastname."','".$this->email."', '".$this->pwd."', '".$this->adresse."', '".$this->date_creation."')";
             $stmt = $this->conn->prepare( $query );
 
-            $stmt->bindParam(":firstname", $this->firstname);
-            $stmt->bindParam(":lastname", $this->lastname);
-            $stmt->bindParam(":email", $this->email);
-            $stmt->bindParam(":password", $this->pwd);
-            $stmt->bindParam(":adresse", $this->adresse);
-            $stmt->bindParam(":date_creation", $this->date_creation);
 
             if($stmt->execute()){
                 return true;
@@ -127,6 +121,16 @@
             $this->adresse = $row['adresse'];
             $this->date_creation = $row['date_creation'];
             $this->current_token = $row['current_token'];
+        }
+
+        function readAmi(){
+
+            $query = "SELECT u.* FROM user AS u JOIN relation_user as ua ON u.id = ua.id_ami WHERE ua.id_user =".$this->id;
+            echo $query;
+            $stmt -> $this->conn->prepare( $query );
+            $stmt->execute();
+
+            return $stmt;
         }
 
         function createToken()
