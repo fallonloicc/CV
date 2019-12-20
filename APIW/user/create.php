@@ -29,6 +29,7 @@ if(
     !empty($data->adresse)
 ){
 
+    // get date
     $date = date('Y-m-d', time());
  
     // set product property values
