@@ -22,8 +22,9 @@
     // prepare query statement
     $stmt = $db->prepare( $query );
 
-    $user->email = $data->email;
+    echo $data->email;
     $user->email = htmlspecialchars(strip_tags($user->email));
+    $user->email = $data->email;
     
     // bind id of product to be updated
     $stmt->bindParam(":email", $user->email);
